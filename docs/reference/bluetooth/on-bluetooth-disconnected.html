@@ -2571,15 +2571,15 @@
     <div class="ui info message">
         <div class="content">
             <p><img class="ui image" src="/static/bluetooth/Bluetooth_SIG.png" alt=""></p>
-<p>For another device like a smartphone to use any of the Bluetooth “services” which the micro:bit has, it must first be <a href="/docs/reference/bluetooth/bluetooth-pairing.html">paired with the micro:bit</a>. Once paired, the other device may connect to the micro:bit and exchange data relating to many of the micro:bit’s features.</p>
+<p>For another device like a smartphone to use any of the Bluetooth “services” which the :bit has, it must first be <a href="/docs/reference/bluetooth/bluetooth-pairing.html">paired with the :bit</a>. Once paired, the other device may connect to the :bit and exchange data relating to many of the :bit’s features.</p>
 
         </div>
     </div>
-<p>This block starts an <a href="/docs/reference/event-handler.html">event handler</a> which in this case will run when a device which is connected to your micro:bit over Bluetooth disconnects.</p>
-<p>You could use this event handler to display a letter “D” on the micro:bit LED grid so you know that the Bluetooth connection has been closed.</p>
+<p>This block starts an <a href="/docs/reference/event-handler.html">event handler</a> which in this case will run when a device which is connected to your :bit over Bluetooth disconnects.</p>
+<p>You could use this event handler to display a letter “D” on the :bit LED grid so you know that the Bluetooth connection has been closed.</p>
 <pre><code class="lang-sig">bluetooth.onBluetoothDisconnected(() =&gt; {
 });</code></pre>
-<h2 id="example-displaying-d-when-a-bluetooth-connection-to-the-micro-bit-is-closed">Example: Displaying “D” when a Bluetooth connection to the micro:bit is closed</h2><pre><code class="lang-blocks">bluetooth.onBluetoothDisconnected(() =&gt; {
+<h2 id="example-displaying-d-when-a-bluetooth-connection-to-the-bit-is-closed">Example: Displaying “D” when a Bluetooth connection to the :bit is closed</h2><pre><code class="lang-blocks">bluetooth.onBluetoothDisconnected(() =&gt; {
     basic.showString(&quot;D&quot;);
 });</code></pre>
 <h2 id="video-on-bluetooth-disconnected">Video - on Bluetooth disconnected</h2>
@@ -2588,7 +2588,7 @@
     <div class="ui embed mdvid" data-source="youtube" data-id="HyBcsD9Eh6I" data-placeholder="https://img.youtube.com/vi/HyBcsD9Eh6I/maxresdefault.jpg">
     </div>
 </div></div>
-<h2 id="see-also">See also</h2><p><a href="/docs/reference/bluetooth/about-bluetooth.html">About Bluetooth</a>, <a href="http://lancaster-university.github.io/microbit-docs/ble/profile/">micro:bit Bluetooth profile overview </a>, <a href="http://lancaster-university.github.io/microbit-docs/resources/bluetooth/microbit-profile-V1.9-Level-2.pdf">micro:bit Bluetooth profile reference</a>,  <a href="http://bluetooth-mdw.blogspot.co.uk/p/bbc-microbit.html">Bluetooth on micro:bit resources</a>, <a href="https://www.bluetooth.com">Bluetooth SIG</a></p>
+<h2 id="see-also">See also</h2><p><a href="/docs/reference/bluetooth/about-bluetooth.html">About Bluetooth</a>, <a href="http://lancaster-university.github.io/microbit-docs/ble/profile/">:bit Bluetooth profile overview </a>, <a href="http://lancaster-university.github.io/microbit-docs/resources/bluetooth/microbit-profile-V1.9-Level-2.pdf">:bit Bluetooth profile reference</a>,  <a href="http://bluetooth-mdw.blogspot.co.uk/p/bbc-microbit.html">Bluetooth on :bit resources</a>, <a href="https://www.bluetooth.com">Bluetooth SIG</a></p>
 <pre><code class="lang-package">bluetooth</code></pre>
 
     </div>

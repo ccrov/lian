@@ -2568,18 +2568,18 @@
             
     <div class="ui text">
         <h1 id="set-group">Set Group</h1><p>Make a program have the group ID you tell it for sending and receiving
-with <code>radio</code>.  A group is like a cable channel (a micro:bit can only
+with <code>radio</code>.  A group is like a cable channel (a :bit can only
 send or receive in one group at a time). A group ID is like the cable
 channel number.</p>
 <p>If you do not tell your program which group ID to use with this
 function, it will figure out its own group ID by itself.  If you load
-the very same program onto two different micro:bits, they will be able
+the very same program onto two different :bits, they will be able
 to talk to each other because they will have the same group ID.</p>
 <pre><code class="lang-sig">radio.setGroup(0);</code></pre>
 <h2 id="parameters">Parameters</h2><ul>
 <li><code>id</code> is a <a href="/docs/types/number.html">number</a> from <code>0</code> to <code>255</code>.</li>
 </ul>
-<h2 id="simulator">Simulator</h2><p>This function only works on the micro:bit, not in browsers.</p>
+<h2 id="simulator">Simulator</h2><p>This function only works on the :bit, not in browsers.</p>
 <h2 id="example">Example</h2><p>This program makes the group ID equal 128.</p>
 <pre><code class="lang-blocks">radio.setGroup(128)</code></pre>
 <h2 id="see-also">See also</h2><p><a href="/docs/reference/radio/on-data-packet-received.html">on data packet received</a>,

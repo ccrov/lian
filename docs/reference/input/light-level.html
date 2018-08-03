@@ -2569,7 +2569,7 @@
     <div class="ui text">
         <h1 id="light-level">Light Level</h1><p>Find the light level (how bright or dark it is) where you are.
 The light level <code>0</code> means darkness and <code>255</code> means bright light. 
-The micro:bit measures the light around it by using some of the
+The :bit measures the light around it by using some of the
 LEDs on the <a href="/docs/device/screen.html">LED screen</a>.</p>
 <p>The first time you use it, this function will say <code>0</code>.
 After that, it will say the real light level.
@@ -2586,8 +2586,8 @@ on the <a href="/docs/device/screen.html">LED screen</a>.</p>
     let level = input.lightLevel()
     basic.showNumber(level)
 })</code></pre>
-<h2 id="example-chart-light-level">Example: chart light level</h2><p>This program shows the light level with a <a href="/docs/reference/led/plot-bar-graph.html">bar chart</a> on the micro:bit screen.
-If you carry the micro:bit around to different places with different light levels,
+<h2 id="example-chart-light-level">Example: chart light level</h2><p>This program shows the light level with a <a href="/docs/reference/led/plot-bar-graph.html">bar chart</a> on the :bit screen.
+If you carry the :bit around to different places with different light levels,
 the bar chart will change.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     led.plotBarGraph(input.lightLevel(), 255)

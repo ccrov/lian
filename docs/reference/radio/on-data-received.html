@@ -2570,12 +2570,12 @@
         <h1 id="on-data-received">On Data Received</h1><blockquote>
 <p>Note: This API has been deprecated! Use <a href="/docs/reference/radio/on-data-packet-received.html">on data packet received</a> instead.</p>
 </blockquote>
-<p>Run part of a program when the micro:bit receives a
+<p>Run part of a program when the :bit receives a
 <a href="/docs/types/number.html">number</a> or <a href="/docs/types/string.html">string</a> over <code>radio</code>.</p>
 <pre><code class="lang-sig">radio.onDataReceived(() =&gt; { });</code></pre>
-<h2 id="example">Example</h2><p>This program keeps sending numbers that says how fast the micro:bit is
+<h2 id="example">Example</h2><p>This program keeps sending numbers that says how fast the :bit is
 slowing down or speeding up.  It also receives numbers for the same
-thing from nearby micro:bits. It shows these numbers as a
+thing from nearby :bits. It shows these numbers as a
 <a href="/docs/reference/led/plot-bar-graph.html">bar graph</a>.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     radio.sendNumber(input.acceleration(Dimension.X));

@@ -2568,8 +2568,8 @@
             
     <div class="ui text">
         <h1 id="connect">Connect</h1><p>We are going to use radio to send the current moisture
-level to a dashboard micro:bit. The dashboard
-will display one LED per micro:bit.</p>
+level to a dashboard :bit. The dashboard
+will display one LED per :bit.</p>
 <h2 id="moisture-sensor">Moisture sensor</h2><p>To make it happen, we need to change the program to </p>
 <ul>
 <li>setup the radio by choosing group 4 and sending the serial number of the device</li>
@@ -2595,8 +2595,8 @@ basic.forever(() =&gt; {
     basic.pause(5000);
 })</code></pre>
 <h2 id="the-dashboard">The dashboard</h2><p>The dashboard code can be found at <a href="/docs/examples/radio-dashboard.html">/examples/radio-dashboard</a>.</p>
-<p>Download the code from that example into the micro:bit that will be used to display the result.</p>
-<p>When the dashboard receives a message from a micro:bit, it find a pixel for that board (and remembers it)
+<p>Download the code from that example into the :bit that will be used to display the result.</p>
+<p>When the dashboard receives a message from a :bit, it find a pixel for that board (and remembers it)
 and uses the number received as the brightness of the LED.</p>
 <p>When a message hasn’t been received by a board for some time, it’s pixel will start to blink. After more time, it will simply turn off. </p>
 <pre><code class="lang-package">radio</code></pre>

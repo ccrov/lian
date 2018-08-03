@@ -2567,7 +2567,7 @@
         
             
     <div class="ui text">
-        <h1 id="mes-events">MES events</h1><p>Events and event values are generated in the Message Event Service (MES). Using MES events allows orderly interactions between the micro:bit and external devices. These events are sent to and received from other wireless devices paired with the micro:bit (phone, game pad, etc.).</p>
+        <h1 id="mes-events">MES events</h1><p>Events and event values are generated in the Message Event Service (MES). Using MES events allows orderly interactions between the :bit and external devices. These events are sent to and received from other wireless devices paired with the :bit (phone, game pad, etc.).</p>
 <p>The event source IDs represent a device feature category. The event values are actions for, or notifications about a device feature.</p>
 
     <div class="ui info message">
@@ -2585,12 +2585,12 @@
 
         </div>
     </div>
-<h2 id="raised-events">Raised events</h2><p>Events are generated, or <em>raised</em>, for by the micro:bit for a paired device. These are raised using the <a href="/docs/reference/control/raise-event.html">raise event</a> function.</p>
+<h2 id="raised-events">Raised events</h2><p>Events are generated, or <em>raised</em>, for by the :bit for a paired device. These are raised using the <a href="/docs/reference/control/raise-event.html">raise event</a> function.</p>
 <pre><code class="lang-typescript-ignore">control.raiseEvent(
     control.eventSourceId(EventBusSource.MES_REMOTE_CONTROL_ID),
     control.eventValueId(EventBusValue.MES_REMOTE_CONTROL_EVT_VOLUMEUP)
 );</code></pre>
-<h3 id="remote-control">Remote control</h3><p>Events for using the micro:bit as a remote control for audio play.</p>
+<h3 id="remote-control">Remote control</h3><p>Events for using the :bit as a remote control for audio play.</p>
 <h4 id="mes_remote_control_id">MES_REMOTE_CONTROL_ID</h4><ul>
 <li><code>MES_REMOTE_CONTROL_EVT_PLAY</code>: Play the current track</li>
 <li><code>MES_REMOTE_CONTROL_EVT_PAUSE</code>: Pause the current play in progress</li>
@@ -2627,7 +2627,7 @@
 <li><code>MES_ALERT_EVT_ALARM5</code></li>
 <li><code>MES_ALERT_EVT_ALARM6</code></li>
 </ul>
-<h2 id="received-events">Received events</h2><p>Events are received by the micro:bit from a paired device. You capture these in an <a href="/docs/reference/control/on-event.html">on event</a> function.</p>
+<h2 id="received-events">Received events</h2><p>Events are received by the :bit from a paired device. You capture these in an <a href="/docs/reference/control/on-event.html">on event</a> function.</p>
 <pre><code class="lang-typescript-ignore">control.onEvent(EventBusSource.MES_DEVICE_INFO_ID, EventBusValue.MES_DEVICE_INCOMING_CALL, () =&gt; {
 
 })</code></pre>

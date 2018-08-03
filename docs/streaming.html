@@ -2567,13 +2567,13 @@
         
             
     <div class="ui text">
-        <div class='ui negative message'>Unknown command: @extends</div><h2 id="setup">Before starting… </h2><p>Make sure you follow the instructions on <a href="/docs/device/serial.html">how to setup a serial connection</a> with the micro:bit. </p>
+        <div class='ui negative message'>Unknown command: @extends</div><h2 id="setup">Before starting… </h2><p>Make sure you follow the instructions on <a href="/docs/device/serial.html">how to setup a serial connection</a> with the :bit. </p>
 <h2 id="example">A typical scenario </h2><p>A common scenario is to chart some sensor data, such as the acceleration, and analyse it in the editor. 
-For example, run this code on your micro:bit.</p>
+For example, run this code on your :bit.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
    led.plotBarGraph(input.acceleration(Dimension.X), 0);
 });</code></pre>
-<p>If your serial connection is working, you will start to see a chart representing that acceleration <code>x</code> value read from the micro:bit.
+<p>If your serial connection is working, you will start to see a chart representing that acceleration <code>x</code> value read from the :bit.
 Each time <code>led.plotBarGraph</code> is called, the value is also written to the serial output. The log view automatically detects 
 that there is a data stream and displays a graph.</p>
 

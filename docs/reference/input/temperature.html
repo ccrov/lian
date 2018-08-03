@@ -2568,16 +2568,16 @@
             
     <div class="ui text">
         <h1 id="temperature">Temperature</h1><p>Find the temperature where you are. The temperature is measured in Celsius (metric).
-The micro:bit can find the temperature nearby by checking how hot its computer chips are.</p>
+The :bit can find the temperature nearby by checking how hot its computer chips are.</p>
 <pre><code class="lang-sig">input.temperature();</code></pre>
 <h2 id="returns">Returns</h2><ul>
 <li>a <a href="/docs/types/number.html">Number</a> that means the Celsius temperature.</li>
 </ul>
-<h2 id="how-does-it-work-">How does it work?</h2><p>The micro:bit checks how hot its CPU (main computer chip) is.
-Because the micro:bit does not usually get very hot, the temperature of the CPU
+<h2 id="how-does-it-work-">How does it work?</h2><p>The :bit checks how hot its CPU (main computer chip) is.
+Because the :bit does not usually get very hot, the temperature of the CPU
 is usually close to the temperature of wherever you are.
-The micro:bit might warm up a little if you make it work hard, though!</p>
-<h2 id="example-micro-bit-thermometer">Example: micro:bit thermometer</h2><p>The following example uses <code>temperature</code> and <code>show number</code> to show the temperature of the room.</p>
+The :bit might warm up a little if you make it work hard, though!</p>
+<h2 id="example-bit-thermometer">Example: :bit thermometer</h2><p>The following example uses <code>temperature</code> and <code>show number</code> to show the temperature of the room.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     let temp = input.temperature()
     basic.showNumber(temp)
@@ -2594,9 +2594,9 @@ To make a Celsius temperature into a Fahrenheit one, multiply the Celsius temper
 
     <div class="ui info message">
         <div class="content">
-            <p>Try comparing the temperature your micro:bit shows to a real thermometer in the same place.
-You might be able to figure out how much to subtract from the number the micro:bit
-shows to get the real temperature. Then you can change your program so the micro:bit is a 
+            <p>Try comparing the temperature your :bit shows to a real thermometer in the same place.
+You might be able to figure out how much to subtract from the number the :bit
+shows to get the real temperature. Then you can change your program so the :bit is a 
 better thermometer.</p>
 
         </div>

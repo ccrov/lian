@@ -2568,15 +2568,15 @@
             
     <div class="ui text">
         <h1 id="blocks-if-statements">blocks - if statements</h1><p>An introduction to conditions for the Block Editor.</p>
-<h2 id="introduction-to-conditions">Introduction to conditions</h2><p>In the introduction to code, we made the micro:bit automatically shows the message ‘hello world!’:</p>
+<h2 id="introduction-to-conditions">Introduction to conditions</h2><p>In the introduction to code, we made the :bit automatically shows the message ‘hello world!’:</p>
 <pre><code class="lang-blocks">basic.showString(&quot;hello world!&quot;)</code></pre>
-<p>This statement, or code, will happen as soon as the micro:bit is activated. This means it is unconditional. We can add a condition to make code function in certain ways:</p>
+<p>This statement, or code, will happen as soon as the :bit is activated. This means it is unconditional. We can add a condition to make code function in certain ways:</p>
 <ul>
 <li>A calculator waits for the user in input numbers and a function, before outputting a result</li>
 <li>A game waits for the user to press a button at the right time before outputting their score</li>
 <li>A quiz waits for the user to choose the correct option, and if they are wrong the quiz will tell the user</li>
 </ul>
-<p>In programming we use an ‘if’ statement: if this condition is met, do something. Lets add an if statement to the code we had before; the micro:bit will wait for the user to press a button before showing the image.</p>
+<p>In programming we use an ‘if’ statement: if this condition is met, do something. Lets add an if statement to the code we had before; the :bit will wait for the user to press a button before showing the image.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     if (input.buttonIsPressed(Button.A)) {
         basic.showString(&quot;hello world!&quot;)
@@ -2590,8 +2590,8 @@
 <li>Create a mini quiz that asks for one button to be pressed which represents an answer</li>
 </ul>
 <h2 id="else">Else</h2><p>What if the user does not press a button? What if the user presses the wrong button? We call this an else, because if the criteria of the if statement are not met then something else is done.</p>
-<p>For example, we could make it so our micro:bit tells us to press the A button. Remove the <code>button pressed</code> and <code>show string</code> blocks from the <code>if</code> block and right click it and select <strong>Delete</strong>. Now click the <strong>If</strong> category and drag out an <code>else if</code> block. Plug the <code>button pressed</code> and <code>show string</code> blocks in the correct places.</p>
-<p>We want the message “Press A!” to scroll across the micro:bit, so right-click the <code>show string</code> block and select <strong>Duplicate</strong>. Drag this new block into the <code>else</code> section and replace the “hello, world!” with “Press A!”. Your code should look like this:</p>
+<p>For example, we could make it so our :bit tells us to press the A button. Remove the <code>button pressed</code> and <code>show string</code> blocks from the <code>if</code> block and right click it and select <strong>Delete</strong>. Now click the <strong>If</strong> category and drag out an <code>else if</code> block. Plug the <code>button pressed</code> and <code>show string</code> blocks in the correct places.</p>
+<p>We want the message “Press A!” to scroll across the :bit, so right-click the <code>show string</code> block and select <strong>Duplicate</strong>. Drag this new block into the <code>else</code> section and replace the “hello, world!” with “Press A!”. Your code should look like this:</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     if (input.buttonIsPressed(Button.A)) {
         basic.showString(&quot;hello world!&quot;)
@@ -2599,7 +2599,7 @@
         basic.showString(&quot;PRESS A&quot;)        
     }
 })</code></pre>
-<p>So, to recap: the <code>forever</code> block makes sure our code runs forever. The micro:bit checks if the user is pressing the left button, if the user is not then the “Press the button!” message will scroll across the LEDs. If the user is pressing the button then the “hello, world!” message will scroll across the screen. Check this in the simulator or attach the micro:bit to the computer then click <strong>Download</strong> to send the code onto the micro:bit.</p>
+<p>So, to recap: the <code>forever</code> block makes sure our code runs forever. The :bit checks if the user is pressing the left button, if the user is not then the “Press the button!” message will scroll across the LEDs. If the user is pressing the button then the “hello, world!” message will scroll across the screen. Check this in the simulator or attach the :bit to the computer then click <strong>Download</strong> to send the code onto the :bit.</p>
 <h2 id="what-is-a-condition-">What is a condition?</h2><p>A condition is criteria that the user must meet for a certain function to be carried out.</p>
 
     </div>

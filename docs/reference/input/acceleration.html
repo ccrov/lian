@@ -2568,7 +2568,7 @@
             
     <div class="ui text">
         <h1 id="acceleration">Acceleration</h1><p>Get the acceleration value (milli g-force) in one of three dimensions, or the combined force in all directions (x, y, and z).</p>
-<p>Find the acceleration of the micro:bit (how fast it is speeding up or slowing down).</p>
+<p>Find the acceleration of the :bit (how fast it is speeding up or slowing down).</p>
 <pre><code class="lang-sig">input.acceleration(Dimension.X);</code></pre>
 
     <div class="ui info message">
@@ -2588,13 +2588,13 @@ A <strong>g</strong> is as much acceleration as you get from Earth’s gravity.<
 </li>
 </ul>
 <h2 id="returns">Returns</h2><ul>
-<li>a <a href="/docs/types/number.html">number</a> that means the amount of acceleration. When the micro:bit is lying flat on a surface with the screen pointing up, <code>x</code> is <code>0</code>, <code>y</code> is <code>0</code>, <code>z</code> is <code>-1023</code>, and <code>strength</code> is <code>1023</code>.</li>
+<li>a <a href="/docs/types/number.html">number</a> that means the amount of acceleration. When the :bit is lying flat on a surface with the screen pointing up, <code>x</code> is <code>0</code>, <code>y</code> is <code>0</code>, <code>z</code> is <code>-1023</code>, and <code>strength</code> is <code>1023</code>.</li>
 </ul>
-<h2 id="example-bar-chart">Example: bar chart</h2><p>This example shows the acceleration of the micro:bit with a bar graph.</p>
+<h2 id="example-bar-chart">Example: bar chart</h2><p>This example shows the acceleration of the :bit with a bar graph.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     led.plotBarGraph(input.acceleration(Dimension.X), 1023)
 })</code></pre>
-<h3 id="example-quake-meter">Example: quake meter</h3><p>Every 5 seconds, with the micro:bit facing upward on a flat surface, show how much the earth is shaking (if at all).</p>
+<h3 id="example-quake-meter">Example: quake meter</h3><p>Every 5 seconds, with the :bit facing upward on a flat surface, show how much the earth is shaking (if at all).</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     basic.showNumber(input.acceleration(Dimension.Strength))
     basic.pause(5000)

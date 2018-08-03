@@ -2567,7 +2567,7 @@
         
             
     <div class="ui text">
-        <h1 id="on-data-packet-received">On Data Packet Received</h1><p>Run part of a program when the micro:bit receives a
+        <h1 id="on-data-packet-received">On Data Packet Received</h1><p>Run part of a program when the :bit receives a
 <a href="/docs/types/number.html">number</a> or <a href="/docs/types/string.html">string</a> over <code>radio</code>.</p>
 <pre><code class="lang-sig">radio.onDataPacketReceived(({receivedNumber, receivedString, time, serial, signal}) =&gt; { });</code></pre>
 
@@ -2581,15 +2581,15 @@
 <li><code>packet</code> - the <a href="/docs/reference/radio/packet.html">packet</a> that was received by the radio. The packet has the following properties:<ul>
 <li><code>receivedNumber</code> - The <a href="/docs/types/number.html">number</a> that was sent in this packet or <code>0</code> if this packet did not contain a number. See <a href="/docs/reference/radio/send-number.html">send number</a> and <a href="/docs/reference/radio/send-value.html">send value</a></li>
 <li><code>receivedString</code> - The <a href="/docs/types/string.html">string</a> that was sent in this packet or the empty string if this packet did not contain a string. See <a href="/docs/reference/radio/send-string.html">send string</a> and <a href="/docs/reference/radio/send-value.html">send value</a></li>
-<li><code>time</code> - The system time of the micro:bit that sent this packet at the time the packet was sent.</li>
-<li><code>serial</code> - The serial number of the micro:bit that sent this packet or <code>0</code> if the micro:bit did not include its serial number.</li>
+<li><code>time</code> - The system time of the :bit that sent this packet at the time the packet was sent.</li>
+<li><code>serial</code> - The serial number of the :bit that sent this packet or <code>0</code> if the :bit did not include its serial number.</li>
 <li><code>signal</code> - How strong the radio signal is from <code>-128</code> (weak) to <code>-42</code> (strong).</li>
 </ul>
 </li>
 </ul>
-<h2 id="example">Example</h2><p>This program keeps sending numbers that says how fast the micro:bit is
+<h2 id="example">Example</h2><p>This program keeps sending numbers that says how fast the :bit is
 slowing down or speeding up.  It also receives numbers for the same
-thing from nearby micro:bits. It shows these numbers as a
+thing from nearby :bits. It shows these numbers as a
 <a href="/docs/reference/led/plot-bar-graph.html">bar graph</a>.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     radio.sendNumber(input.acceleration(Dimension.X));
@@ -2598,7 +2598,7 @@ radio.onDataPacketReceived(({ receivedNumber }) =&gt; {
     led.plotBarGraph(receivedNumber, 1023);
 })</code></pre>
 <h2 id="example">Example</h2><p>This program uses the signal strength from received packets to graph the
-approximate distance between two micro:bits.</p>
+approximate distance between two :bits.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     radio.sendNumber(0)
 })

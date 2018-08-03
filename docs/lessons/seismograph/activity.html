@@ -2567,17 +2567,17 @@
         
             
     <div class="ui text">
-        <h1 id="seismograph-activity">Seismograph Activity</h1><p>Welcome! In this project, you will build your own seismograph. This activity will teach how to use the micro:bit to chart the strength of the acceleration. Let’s get started! Project duration: 25 minutes.</p>
+        <h1 id="seismograph-activity">Seismograph Activity</h1><p>Welcome! In this project, you will build your own seismograph. This activity will teach how to use the :bit to chart the strength of the acceleration. Let’s get started! Project duration: 25 minutes.</p>
 
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Engineering: In this project, you will build your own seismograph micro:bit from tape and a household plate. </p>
+            <p>Engineering: In this project, you will build your own seismograph :bit from tape and a household plate. </p>
 
         </div>
     </div>
 <h2 id="what-you-ll-need-">What you’ll need:</h2><ul>
-<li>micro:bit </li>
+<li>:bit </li>
 <li>micro USB cable</li>
 <li>Plate </li>
 <li>Tape </li>
@@ -2586,13 +2586,13 @@
 <p><img class="ui image" src="/static/mb/lessons/seismograph11.png" alt=""></p>
 <h1 id="engineering-steps">Engineering Steps</h1><h2 id="1-">1.</h2><p>Prepare Tape: Measure and cut approximately 10mm of tape. The tape will be fastened to a micro USB cable.  </p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph1.png" alt=""></p>
-<h2 id="2-">2.</h2><p>Fasten Tape: Fasten tape to the micro USB cable and to the plate. Attach the micro:bit to the micro:bit USB cable. </p>
+<h2 id="2-">2.</h2><p>Fasten Tape: Fasten tape to the micro USB cable and to the plate. Attach the :bit to the :bit USB cable. </p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph0.png" alt=""></p>
 
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Computer Science: The seismograph has been built. We are ready to program the micro:bit to be a seismograph! </p>
+            <p>Computer Science: The seismograph has been built. We are ready to program the :bit to be a seismograph! </p>
 
         </div>
     </div>
@@ -2602,7 +2602,7 @@
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     led.plotBarGraph(input.acceleration(Dimension.Strength), 0);
 });</code></pre>
-<h2 id="6-">6.</h2><p>At rest, the micro:bit is always subject to Earth gravity, whose magnitude is measured around <code>1023</code>. Substract <code>1023</code> to measure a data close to <code>0</code>. </p>
+<h2 id="6-">6.</h2><p>At rest, the :bit is always subject to Earth gravity, whose magnitude is measured around <code>1023</code>. Substract <code>1023</code> to measure a data close to <code>0</code>. </p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     led.plotBarGraph(input.acceleration(Dimension.Strength) - 1023, 0);
 });</code></pre>
@@ -2610,27 +2610,27 @@
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Data Analysis: We now need to use the micro:bit to Analyze Data and chart for the strength of the acceleration.</p>
+            <p>Data Analysis: We now need to use the :bit to Analyze Data and chart for the strength of the acceleration.</p>
 
         </div>
     </div>
-<h1 id="data-analysis-steps">Data Analysis Steps</h1><h2 id="7-">7.</h2><p>First, notice that moving the micro:bit in the simulator in any direction, you will change the acceleration value, which is being displayed as the same color as the micro:bit simulator. Also, notice that by moving the micro:bit simulator, there is a changing acceleration value. Second, the flat colored horizontal line will start a waving line to display the value of the strength as measured in milli-gravities. Finally, notice that the LED display will fluctate based on the movement of the micro:bit simulator. </p>
+<h1 id="data-analysis-steps">Data Analysis Steps</h1><h2 id="7-">7.</h2><p>First, notice that moving the :bit in the simulator in any direction, you will change the acceleration value, which is being displayed as the same color as the :bit simulator. Also, notice that by moving the :bit simulator, there is a changing acceleration value. Second, the flat colored horizontal line will start a waving line to display the value of the strength as measured in milli-gravities. Finally, notice that the LED display will fluctate based on the movement of the :bit simulator. </p>
 <p><img class="ui image" src="/static/mb/lessons/analyze20.png" alt=""></p>
-<h2 id="8-">8.</h2><p>Connect a micro:bit to your computer using your USB cable</p>
+<h2 id="8-">8.</h2><p>Connect a :bit to your computer using your USB cable</p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph33.png" alt=""></p>
-<p>Click or tap the <strong>Download</strong> button for the seismograph program to run the program on the micro:bit. </p>
-<h2 id="9-">9.</h2><p>A black line should appear directly beneath the colored line. The black line measures the micro:bit acceleration.  And the colored line measures micro:bit simulator acceleration. </p>
-<p>Run the acceleration experiment by vigarously moving the plate in any direction or move the object below the micro:bit (such as a table).</p>
-<p>Every time the micro:bit moves in any direction,  you generate data points that can be reviewed in Excel later. The more attempts to move the micro:bit, the more data to be reviewed in Excel.  </p>
+<p>Click or tap the <strong>Download</strong> button for the seismograph program to run the program on the :bit. </p>
+<h2 id="9-">9.</h2><p>A black line should appear directly beneath the colored line. The black line measures the :bit acceleration.  And the colored line measures :bit simulator acceleration. </p>
+<p>Run the acceleration experiment by vigarously moving the plate in any direction or move the object below the :bit (such as a table).</p>
+<p>Every time the :bit moves in any direction,  you generate data points that can be reviewed in Excel later. The more attempts to move the :bit, the more data to be reviewed in Excel.  </p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph5.png" alt=""></p>
 <h2 id="10-">10.</h2><p>Please find seismogrph experiment obervations: </p>
-<p>First, notice that moving the micro:bit in any direction, you will change the acceleration value, which is being displayed as a milli-gravities value. By moving the micro:bit, there will be a changing acceleration value. </p>
+<p>First, notice that moving the :bit in any direction, you will change the acceleration value, which is being displayed as a milli-gravities value. By moving the :bit, there will be a changing acceleration value. </p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph7.png" alt=""></p>
-<p>Second, the horizontal line will move to plot the value of the strength as measured in milli-gravities. The horizontal line’s movement is based on the micro:bit acceleration in Magnitude or Strength. </p>
+<p>Second, the horizontal line will move to plot the value of the strength as measured in milli-gravities. The horizontal line’s movement is based on the :bit acceleration in Magnitude or Strength. </p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph6.png" alt=""></p>
-<p>Third, notice that the LED display fluctates based on the movement of the micro:bit. </p>
+<p>Third, notice that the LED display fluctates based on the movement of the :bit. </p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph8.png" alt=""></p>
-<p>Now we are ready to graph or chart the accceleration of the micro:bit. We want a printout of the micro:bit acceleration graphed in Excel.</p>
+<p>Now we are ready to graph or chart the accceleration of the :bit. We want a printout of the :bit acceleration graphed in Excel.</p>
 <h2 id="11-">11.</h2><p>In order to receive the the data plotted by Excel, click or tap anywhere in the on the chart data.</p>
 <p><img class="ui image" src="/static/mb/analyze1.png" alt=""></p>
 <h2 id="12-">12.</h2><p>You have two options to Analyze Data: </p>
@@ -2640,10 +2640,10 @@
 </ul>
 <p>Click or tap Download data</p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph9.png" alt=""></p>
-<h2 id="13-">13.</h2><p>A CSV file will be generated to display the data points collected by the micro:bit. Click or tap on the data Excel file that was downloaded to your local Downloads Folder. </p>
+<h2 id="13-">13.</h2><p>A CSV file will be generated to display the data points collected by the :bit. Click or tap on the data Excel file that was downloaded to your local Downloads Folder. </p>
 <p><img class="ui image" src="/static/mb/lessons/analyze9.png" alt=""></p>
 <h2 id="14-">14.</h2><p>Select the data that you want to include in your chart. The chart should include the first two columns: time and acceleration. </p>
-<p>Click or tap on the first two columns (A, B) to include time and acceleration data from the micro:bit  </p>
+<p>Click or tap on the first two columns (A, B) to include time and acceleration data from the :bit  </p>
 <h2 id="15-">15.</h2><p>Click or tap on Insert then select Recommended Charts. We can select a chart that’s just right for the data.</p>
 <p><img class="ui image" src="/static/mb/analyze3.png" alt=""></p>
 <p>On the Recommended Charts tab, scroll through the list of chart types that Excel recommends for your data. </p>

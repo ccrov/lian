@@ -2568,12 +2568,12 @@
             
     <div class="ui text">
         <h1 id="compass">compass</h1><p><img class="ui image" src="/static/mb/projects/a5-compass.png" alt=""></p>
-<p>Display the direction that the micro:bit is facing using the compass </p>
+<p>Display the direction that the :bit is facing using the compass </p>
 
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Welcome! This guided tutorial will show you how to program a script that displays the direction the micro:bit is pointing. Let’s get started!</p>
+            <p>Welcome! This guided tutorial will show you how to program a script that displays the direction the :bit is pointing. Let’s get started!</p>
 
         </div>
     </div>
@@ -2581,19 +2581,19 @@
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
 
 })</code></pre>
-<h2 id="step-2">Step 2</h2><p>Store the reading of the micro:bit in a variable called <code>degrees</code>.</p>
+<h2 id="step-2">Step 2</h2><p>Store the reading of the :bit in a variable called <code>degrees</code>.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     let degrees = input.compassHeading()
 })</code></pre>
 <h2 id="step-3">Step 3</h2><p>If <code>degrees</code> is less than <code>45</code> or greater than <code>315</code>, 
-then the compass heading is mostly pointing toward North. Display <code>N</code> on the micro:bit.</p>
+then the compass heading is mostly pointing toward North. Display <code>N</code> on the :bit.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     let degrees = input.compassHeading();
     if (degrees &lt; 45 || degrees &gt; 315) {
         basic.showString(&quot;N&quot;);
     }
 });</code></pre>
-<h2 id="step-4">Step 4</h2><p>If <code>degrees</code> is less than 135, the micro:bit is mostly pointing East. Display <code>E</code> on the micro:bit.</p>
+<h2 id="step-4">Step 4</h2><p>If <code>degrees</code> is less than 135, the :bit is mostly pointing East. Display <code>E</code> on the :bit.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     let degrees = input.compassHeading();
     if (degrees &lt; 45 || degrees &gt; 315) {
@@ -2603,7 +2603,7 @@ then the compass heading is mostly pointing toward North. Display <code>N</code>
         basic.showString(&quot;E&quot;);
     }
 });</code></pre>
-<h2 id="step-5">Step 5</h2><p>If <code>degrees</code> is less than 225, the micro:bit is mostly pointing South. Display <code>S</code> on the micro:bit.</p>
+<h2 id="step-5">Step 5</h2><p>If <code>degrees</code> is less than 225, the :bit is mostly pointing South. Display <code>S</code> on the :bit.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     let degrees = input.compassHeading();
     if (degrees &lt; 45 || degrees &gt; 315) {
@@ -2616,7 +2616,7 @@ then the compass heading is mostly pointing toward North. Display <code>N</code>
         basic.showString(&quot;S&quot;);
     }
 });</code></pre>
-<h2 id="step-6">Step 6</h2><p>If none of these conditions returned true, then the micro:bit must be pointing West. Display <code>W</code> on the micro:bit.</p>
+<h2 id="step-6">Step 6</h2><p>If none of these conditions returned true, then the :bit must be pointing West. Display <code>W</code> on the :bit.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     let degrees = input.compassHeading();
     if (degrees &lt; 45 || degrees &gt; 315) {

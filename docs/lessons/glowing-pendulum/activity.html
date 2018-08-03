@@ -2599,7 +2599,7 @@ basic.forever(() =&gt; {
 basic.forever(() =&gt; {
     let acceleration = input.acceleration(Dimension.Y);
 });</code></pre>
-<p>Since the micro:bit will be swinging back and forth, the acceleration will only be positive half of the time. Thus, to always get a positive value, we want to take the absolute value of the acceleration.</p>
+<p>Since the :bit will be swinging back and forth, the acceleration will only be positive half of the time. Thus, to always get a positive value, we want to take the absolute value of the acceleration.</p>
 <pre><code class="lang-blocks">basic.showLeds(`
     # # # # #
     # # # # #
@@ -2611,7 +2611,7 @@ basic.forever(() =&gt; {
     let acceleration = input.acceleration(Dimension.Y);
     acceleration = Math.abs(acceleration)
 });</code></pre>
-<p>The function <code>acceleration(y)</code> returns a number between 0 and 1024. We want to use this value for the brightness of the micro:bit, but the <code>set brightness()</code> only accepts a value between 0 and 256. Thus, we need to divide the acceleration by 4 to ensure we will be in the appropriate range.</p>
+<p>The function <code>acceleration(y)</code> returns a number between 0 and 1024. We want to use this value for the brightness of the :bit, but the <code>set brightness()</code> only accepts a value between 0 and 256. Thus, we need to divide the acceleration by 4 to ensure we will be in the appropriate range.</p>
 <pre><code class="lang-blocks">basic.showLeds(`
     # # # # #
     # # # # #
@@ -2624,7 +2624,7 @@ basic.forever(() =&gt; {
     acceleration = Math.abs(acceleration);
     acceleration = acceleration / 4;
 });</code></pre>
-<p>Now let’s use our acceleration value to set the brightness on the micro:bit.</p>
+<p>Now let’s use our acceleration value to set the brightness on the :bit.</p>
 <pre><code class="lang-blocks">basic.showLeds(`
     # # # # #
     # # # # #

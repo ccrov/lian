@@ -2571,12 +2571,12 @@
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Welcome! The activity will teach you how to use the acceleration of the 1st micro:bit and to visualize the acceleration on the 2nd micro:bit.
+            <p>Welcome! The activity will teach you how to use the acceleration of the 1st :bit and to visualize the acceleration on the 2nd :bit.
 Let’s get started!</p>
 
         </div>
     </div>
-<p>Let’s measure <code>acceleration (mg)</code> and then <code>send number</code>. <code>Acceleration</code> is measured in <strong>milli-gravities</strong>, so a value of -1000 is equivalent to -1g or -9.81m/s^2. We will be able to get the acceleration value (g-force), in the specified “x” dimension. <code>Send number</code> will broadcast a number data packet to other micro:bits connected via radio.</p>
+<p>Let’s measure <code>acceleration (mg)</code> and then <code>send number</code>. <code>Acceleration</code> is measured in <strong>milli-gravities</strong>, so a value of -1000 is equivalent to -1g or -9.81m/s^2. We will be able to get the acceleration value (g-force), in the specified “x” dimension. <code>Send number</code> will broadcast a number data packet to other :bits connected via radio.</p>
 <pre><code class="lang-blocks">radio.sendNumber(input.acceleration(Dimension.X));</code></pre>
 <p>We want to display the acceleration forever. In order to do so, we need a <code>forever</code> loop. A forever loop will repeat code in the background forever.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
@@ -2589,17 +2589,17 @@ Let’s get started!</p>
 radio.onDataPacketReceived(() =&gt; {
 
 })</code></pre>
-<p>Finally, we want to chart the acceleration. So we must first implement <code>plot bar graph</code>. <code>Plot Bar Graph</code> will display a vertical bar graph based on the value and high value. In order to transfer the receive the number from the 1st micro:bit, we must implement <code>receive number</code> to constantly display a vertical bar graph based on the value. Remember, the value will equal to the micro:bit’s acceleration in the “x” direction.</p>
+<p>Finally, we want to chart the acceleration. So we must first implement <code>plot bar graph</code>. <code>Plot Bar Graph</code> will display a vertical bar graph based on the value and high value. In order to transfer the receive the number from the 1st :bit, we must implement <code>receive number</code> to constantly display a vertical bar graph based on the value. Remember, the value will equal to the :bit’s acceleration in the “x” direction.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     radio.sendNumber(input.acceleration(Dimension.X))
 })
 radio.onDataPacketReceived(({ receivedNumber }) =&gt; {
     led.plotBarGraph(receivedNumber, 1023)
 })</code></pre>
-<p>Notice that moving the micro:bit the farthest direction in the x direction will be -1023 on the charting beneath the simulator. The second observation will be that the LEDs will be full brightness on the 2nd micro:bit. There is a single LED turned on with the 1st micro:bit. Additionally, the graphs will reflect 0 acceleation for the 1st micro:bit. In this scenario, if you are adjusting the acceleration in the simualator, you are also changing your chart that will be produced.</p>
+<p>Notice that moving the :bit the farthest direction in the x direction will be -1023 on the charting beneath the simulator. The second observation will be that the LEDs will be full brightness on the 2nd :bit. There is a single LED turned on with the 1st :bit. Additionally, the graphs will reflect 0 acceleation for the 1st :bit. In this scenario, if you are adjusting the acceleration in the simualator, you are also changing your chart that will be produced.</p>
 <p><img class="ui image" src="/static/mb/acc.png" alt=""></p>
-<p>NOTE: The colors of the charts reflect the color of the micro:bit simulator. In this instance, the micro:bits are blue and green. So the colors of the line graphs reflect the colors of the micro:bit</p>
-<p>After running this simulation several seconds by moving the micro:bit side to side in the x direction, you are ready to graph or chart the accceleration of the micro:bit.  We want a printout of our acceleration on Excel. We will graph the fluctuating acceleration of the simulation experiment.</p>
+<p>NOTE: The colors of the charts reflect the color of the :bit simulator. In this instance, the :bits are blue and green. So the colors of the line graphs reflect the colors of the :bit</p>
+<p>After running this simulation several seconds by moving the :bit side to side in the x direction, you are ready to graph or chart the accceleration of the :bit.  We want a printout of our acceleration on Excel. We will graph the fluctuating acceleration of the simulation experiment.</p>
 <p><img class="ui image" src="/static/mb/acc2.png" alt=""></p>
 <p>Finally, you must open the Excel CSV file by clicking on the data.xls file that was downloaded to Downloads Folder.</p>
 <p><img class="ui image" src="/static/mb/data3.png" alt=""></p>
@@ -2621,10 +2621,10 @@ radio.onDataPacketReceived(({ receivedNumber }) =&gt; {
 <p><img class="ui image" src="/static/mb/elements_styles_filters.png" alt=""></p>
 <p>Have fun reviewing your simulation and analyze the acceleration by chart the Excel data using Excel.</p>
 <ul>
-<li>Connect the first micro:bit to your computer using your USB cable and run the charting script on it.</li>
-<li>Connect the second micro:bit to your computer using your USB cable and run the charting script on it.</li>
-<li>The first person and second person take turns tilting the micro:bit in the “x” direction while the other player charts the data on the micro:bit!</li>
-<li>Review and analyze the actual micro:bit device acceleration data on Excel</li>
+<li>Connect the first :bit to your computer using your USB cable and run the charting script on it.</li>
+<li>Connect the second :bit to your computer using your USB cable and run the charting script on it.</li>
+<li>The first person and second person take turns tilting the :bit in the “x” direction while the other player charts the data on the :bit!</li>
+<li>Review and analyze the actual :bit device acceleration data on Excel</li>
 <li>Display acceleration with y or z using plot bar graph by changing acceleration from “x” to “y” or “z”</li>
 </ul>
 <pre><code class="lang-package">radio</code></pre>

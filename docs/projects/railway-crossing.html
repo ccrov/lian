@@ -2575,22 +2575,22 @@
 </div></div>
 <h2 id="duration">Duration</h2><p>7 steps, about 15-30 minutes each.</p>
 <h2 id="step-1-light-sensor">Step 1: Light sensor</h2><p>We are going to use the light sensor to detect if a train is passing. We will do this by detecting the shadow of the train.</p>
-<p>Let’s first explore how the light sensor works by downloading the following program onto our micro:bit.</p>
+<p>Let’s first explore how the light sensor works by downloading the following program onto our :bit.</p>
 <pre><code class="lang-block">input.onButtonPressed(Button.A, () =&gt; {
     basic.showNumber(input.lightLevel())
 })</code></pre>
-<p>Now press button A and the micro:bit responds with a number. This number indicates the amount of light that falls
+<p>Now press button A and the :bit responds with a number. This number indicates the amount of light that falls
 on the LEDs (yes, LEDs can also be used to detect light). If the number that you receive is either 255 or 0 it means
 the brightness sensor is initializing, so you need to press the button once more.</p>
 <h2 id="step-2-the-scene">Step 2: The scene</h2><p>NOTE: If you do not possess a train, you can also use a car or even your hand to create a shadow.</p>
 <p>Detecting a shadow can be a bit tricky. For this to work we need to have a bright lamp on the other side of the train,
 that is not too high. A desk lamp should work. Furthermore, we do not want too much light from other light sources,
 so you may have to close curtains or blinds and dim ceiling lamps.</p>
-<p>You should now see a shadow of the train that is big enough to place your micro:bit in. Make sure the board is laying
+<p>You should now see a shadow of the train that is big enough to place your :bit in. Make sure the board is laying
 down flat on the table and write down the amount of light that is measured in the shadow and the amount of light
 that is measured when there is no shadow. The number in the light should be at least 2 times the number in the shadow.</p>
 <h2 id="step-3-detecting-the-train">Step 3: Detecting the train</h2><p><img class="ui image" src="/static/mb/projects/railway-crossing/railway-crossing-action.png" alt="Train detection"></p>
-<p>We are going to turn on the top-left LED on our micro:bit when a train is passing by.
+<p>We are going to turn on the top-left LED on our :bit when a train is passing by.
 For this you need to pick a threshold. This should be a number that is roughly in between the 
 two numbers you wrote down in step 2. 
 For example, if the brightness in the shadow was 20 and in the light it was 60, you should use 40 as the threshold. </p>
@@ -2628,11 +2628,11 @@ close the railway crossing using a button.</p>
 <li>Put a resistor at the bottom of the pole and add 2 LEDs in parallel above it. 
 These LEDs should be placed in opposite directions.</li>
 <li>Use the crocodile clips to complete the circuit.</li>
-<li>Now connect the circuit to the 3V and GND pins of the micro:bit. One of the LEDs should now light up.</li>
+<li>Now connect the circuit to the 3V and GND pins of the :bit. One of the LEDs should now light up.</li>
 <li>Swap the crocodile clips and now the other LED should light up.</li>
 </ul>
-<h2 id="step-5-making-the-lights-blink">Step 5: Making the lights blink</h2><p>Now we are going to program the micro:bit to make the LEDs blink like a railway crossing. For this we are
-going to connect the lights from the previous step to pins 1 and 2 of the micro:bit. </p>
+<h2 id="step-5-making-the-lights-blink">Step 5: Making the lights blink</h2><p>Now we are going to program the :bit to make the LEDs blink like a railway crossing. For this we are
+going to connect the lights from the previous step to pins 1 and 2 of the :bit. </p>
 <p>We can turn on one LED by writing a digital 1 to one pin and a digital 0 to the other
 (digital 1 means 3 Volt, digital 0 means GND). The other LED can be turned on by swapping 0 and 1. 
 Now use the following program to make the lights blink indefinitely.</p>

@@ -2575,13 +2575,13 @@
 
         </div>
     </div>
-<h2 id="timing-gates">Timing gates</h2><p>The two gates are connected to the micro:bit and can detect a car passing through.</p>
+<h2 id="timing-gates">Timing gates</h2><p>The two gates are connected to the :bit and can detect a car passing through.</p>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/sketchgates.jpg" alt="" title="Sketch of the gates"></p>
-<p>As the car passes through the gate <code>0</code>, it sends an event to the micro:bit through the <a href="/docs/reference/input/on-pin-pressed.html">on pin pressed</a> block.
-The micro:bit records the time in a variable <code>t0</code>.</p>
+<p>As the car passes through the gate <code>0</code>, it sends an event to the :bit through the <a href="/docs/reference/input/on-pin-pressed.html">on pin pressed</a> block.
+The :bit records the time in a variable <code>t0</code>.</p>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/sketchgate1.jpg" alt="" title="Sketch first gate"></p>
-<p>As the car passes through the gate <code>1</code>, it sends an event to the micro:bit through the <a href="/docs/reference/input/on-pin-pressed.html">on pin pressed</a> block.
-The micro:bit records the time in a variable <code>t1</code>.</p>
+<p>As the car passes through the gate <code>1</code>, it sends an event to the :bit through the <a href="/docs/reference/input/on-pin-pressed.html">on pin pressed</a> block.
+The :bit records the time in a variable <code>t1</code>.</p>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/sketchgate2.jpg" alt="" title="Sketch first gate"></p>
 <p>The rest is a bit of math and physics. The time taken to cross the gates is computed as the difference of <code>t1 - t0</code>.
 By dividing the distance between the gates by the duration, we get the speed of the car!</p>
@@ -2591,7 +2591,7 @@ By dividing the distance between the gates by the duration, we get the speed of 
 <li>Aluminum fail</li>
 <li>Double-side tape (carpet tape)</li>
 <li>4 crocodile clips</li>
-<li>A micro:bit board and USB cable</li>
+<li>A :bit board and USB cable</li>
 </ul>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/materials.jpg" alt="" title="Materials"></p>
 <h2 id="blocks">blocks</h2><pre><code class="lang-cards">basic.showLeds(`
@@ -2616,11 +2616,11 @@ basic.showNumber(0)</code></pre>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/spreadfoil.jpg" alt="" title="Foil taped"></p>
 <p>Connect a crocodile strip to each foil strip.</p>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/connectsensor.jpg" alt="" title="Connecting sensor"></p>
-<p>Connect the crocodile plugs to the <code>GND</code> and <code>P0</code> pins on the micro:bit.</p>
-<p><img class="ui image" src="/static/mb/projects/timing-gates/connectcrocs.jpg" alt="" title="Connecting the micro:bit"></p>
+<p>Connect the crocodile plugs to the <code>GND</code> and <code>P0</code> pins on the :bit.</p>
+<p><img class="ui image" src="/static/mb/projects/timing-gates/connectcrocs.jpg" alt="" title="Connecting the :bit"></p>
 <p>The gate is ready to use! Your circuit should look like the picture below:</p>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/sensordone.jpg" alt="" title="A single gate"></p>
-<h2 id="detecting-the-car-with-code">Detecting the car with code</h2><p>The micro:bit provides an event <a href="/docs/reference/input/on-pin-pressed.html">on pin pressed</a> 
+<h2 id="detecting-the-car-with-code">Detecting the car with code</h2><p>The :bit provides an event <a href="/docs/reference/input/on-pin-pressed.html">on pin pressed</a> 
 that is raised when a circuit between <code>GND</code> and a pin is detected. The circuit conductor could be a wire or even your body!
 We will attach a foil to the bottom of the car. When it passes over the gate, it connect both foil strips, close the circuit and trigger the event. </p>
 <p>Open the <a href="/docs/.html">code editor</a> and start a new project and add the following blocks. Notice that we are using pin <code>P0</code> here. </p>
@@ -2667,7 +2667,7 @@ To fix this, you would have to consider using better sensors based on IR or Hall
     </div>
 <h2 id="adding-the-second-gate">Adding the second gate</h2><p>Repeat the same process with tape and foil to build the first gate.</p>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/sensor2.jpg" alt="" title="Double foil sensors"></p>
-<p>Connect the crocodile plugs to the <code>GND</code> and <code>P1</code> pins on the micro:bit.</p>
+<p>Connect the crocodile plugs to the <code>GND</code> and <code>P1</code> pins on the :bit.</p>
 <p><img class="ui image" src="/static/mb/projects/timing-gates/sensormicrobit2.jpg" alt="" title="Sensor and microbit"></p>
 <h2 id="detecting-the-second-gate">Detecting the second gate</h2><p>Since the second gate is connected to pin <code>P1</code>, we add a second <a href="/docs/reference/input/on-pin-pressed.html">on pin pressed</a> event
 that display 2 columns of LEDs.</p>
@@ -2703,7 +2703,7 @@ input.onPinPressed(TouchPin.P1, () =&gt; {
     <div class="ui embed mdvid" data-source="youtube" data-id="N4bWQcu6yWs" data-placeholder="https://img.youtube.com/vi/N4bWQcu6yWs/maxresdefault.jpg">
     </div>
 </div></div>
-<h2 id="computing-time">Computing time</h2><p>The micro:bit has a clock that measures time precisely. It measures how many seconds the micro:bit has been on. 
+<h2 id="computing-time">Computing time</h2><p>The :bit has a clock that measures time precisely. It measures how many seconds the :bit has been on. 
 We will record the time where each gate is tripped in variables <code>t0</code> and <code>t1</code>. 
 We take the different between <code>t1</code> and <code>t0</code> to compute the duration between the gates.</p>
 <pre><code class="lang-blocks">let t0 = 0;

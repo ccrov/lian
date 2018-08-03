@@ -2575,7 +2575,7 @@
 
         </div>
     </div>
-<h2 id="duration-30-minutes">Duration: ~30 minutes</h2><h2 id="step-1-calibrate-servo">Step 1: calibrate servo</h2><p>In order for the Milky Monster to move, the micro:bit needs to command the servo to go between <code>0</code> and <code>180</code> degrees at a certain pace. In the code below:</p>
+<h2 id="duration-30-minutes">Duration: ~30 minutes</h2><h2 id="step-1-calibrate-servo">Step 1: calibrate servo</h2><p>In order for the Milky Monster to move, the :bit needs to command the servo to go between <code>0</code> and <code>180</code> degrees at a certain pace. In the code below:</p>
 <ul>
 <li>the user pressed button <code>A</code> to switch the servo to 180 degrees (to close the mouth of Milky Monster). </li>
 <li>the user pressed button <code>B</code> to switch the servo to 0 degrees (to open the mouth of Milky Monster). </li>
@@ -2617,14 +2617,14 @@ basic.showString(&quot;calibrate&quot;)</code></pre>
     <div class="ui embed mdvid" data-source="youtube" data-id="AWsnwk_iA_A" data-placeholder="https://img.youtube.com/vi/AWsnwk_iA_A/maxresdefault.jpg">
     </div>
 </div></div>
-<h2 id="step-5-connect-cables-to-micro-bit">Step 5: connect cables to micro:bit</h2><p>Connect cables from micro:bit to the servo and place the battery.</p>
+<h2 id="step-5-connect-cables-to-bit">Step 5: connect cables to :bit</h2><p>Connect cables from :bit to the servo and place the battery.</p>
 
 <div class="ui grid">
 <div class="ten wide column">
     <div class="ui embed mdvid" data-source="youtube" data-id="fAR58GJUZdM" data-placeholder="https://img.youtube.com/vi/fAR58GJUZdM/maxresdefault.jpg">
     </div>
 </div></div>
-<h2 id="step-6-code-light-sensor">Step 6: code light sensor</h2><p>Code the lightsensor on the micro:bit to control the servo.</p>
+<h2 id="step-6-code-light-sensor">Step 6: code light sensor</h2><p>Code the lightsensor on the :bit to control the servo.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     pins.servoWritePin(AnalogPin.P0, input.lightLevel())
     led.plotBarGraph(

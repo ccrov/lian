@@ -2586,8 +2586,8 @@ When playing with more than two players, it becomes a team game: all players sha
 then the number of <strong>rock</strong>, <strong>paper</strong>, <strong>scissors</strong> is tallied between all the players. 
 The team with the most players wins the game.</p>
 <p>Starting from the <a href="/docs/projects/rock-paper-scissors.html">basic version of the RPS game</a>, we are going
-to change the code so that the micro:bit counts and displays the number of players in the same team.
-Using the <strong>radio</strong> communication, the micro:bit will send its status and receive the status of other boards.</p>
+to change the code so that the :bit counts and displays the number of players in the same team.
+Using the <strong>radio</strong> communication, the :bit will send its status and receive the status of other boards.</p>
 <p>Let’s get started!</p>
 <h2 id="starting-blocks">Starting blocks</h2><p>Let’s start form a . The basic version picks the weapon in a <code>|on shake|</code> 
 event and display an icon accordingly. Take a peek at the code below to refresh your memory on that game.</p>
@@ -2618,9 +2618,9 @@ basic.forever(() =&gt; {
         basic.showIcon(IconNames.Scissors)
     }
 });</code></pre>
-<h2 id="step-2-send-status-via-radio">Step 2: send status via radio</h2><p>We send the value of <code>weapon</code> via radio to other micro:bit in the <code>|forever|</code>. 
+<h2 id="step-2-send-status-via-radio">Step 2: send status via radio</h2><p>We send the value of <code>weapon</code> via radio to other :bit in the <code>|forever|</code>. 
 Since radio packet may or may not arrive, it’s a good idea to keep sending them.</p>
-<p>We also set the radio group and send the device serial number (a number that uniquely identifies a micro:bit) as we will need that later.</p>
+<p>We also set the radio group and send the device serial number (a number that uniquely identifies a :bit) as we will need that later.</p>
 <pre><code class="lang-blocks">let weapon = 0
 input.onGesture(Gesture.Shake, () =&gt; {
     weapon = Math.random(3)
@@ -2641,16 +2641,16 @@ radio.setTransmitSerialNumber(true)</code></pre>
 <h2 id="step-3-the-team-roster">Step 3: the team roster</h2><p>So all players are constantly broadcasting which face they picked to other players. 
 Let’s add the code that receives those status and counts them.</p>
 <p>We are going to add an <strong>Array</strong> variable that contains all the players in the same team as the current player.
-That array, named <code>players</code>, is like your team roster: it contains the list of micro:bit serial numbers
+That array, named <code>players</code>, is like your team roster: it contains the list of :bit serial numbers
 that have the same weapon as you.</p>
 <pre><code class="lang-block">let players: number[] = [0]</code></pre>
-<h2 id="step-4-receiving-a-message-part-1-">Step 4: Receiving a message (part 1)</h2><p>In an the <code>|on radio received|</code> event, we receive the status from another micro:bit. Click on the <em>*gearwheel</em>
+<h2 id="step-4-receiving-a-message-part-1-">Step 4: Receiving a message (part 1)</h2><p>In an the <code>|on radio received|</code> event, we receive the status from another :bit. Click on the <em>*gearwheel</em>
 to add the <code>serial</code> parameter as we will need it to identify who sent that packet.</p>
 <p>We compute three values from the data received:</p>
 <ul>
-<li><code>match</code>, a boolean value indicating whether the weapon of the other micro:bit matches our current weapon</li>
+<li><code>match</code>, a boolean value indicating whether the weapon of the other :bit matches our current weapon</li>
 <li><code>player_index</code>, the position in the array of the other board’s serial number. It will be -1 if it is not in the array</li>
-<li><code>found</code>, a boolean value indicating whether the micro:bit serial number is part of the <code>players</code> array</li>
+<li><code>found</code>, a boolean value indicating whether the :bit serial number is part of the <code>players</code> array</li>
 </ul>
 <pre><code class="lang-blocks">let match = false
 let player_index = 0

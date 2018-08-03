@@ -2571,7 +2571,7 @@
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Find the hidden micro:bit before the other players!</p>
+            <p>Find the hidden :bit before the other players!</p>
 
         </div>
     </div>
@@ -2581,10 +2581,10 @@
     <div class="ui embed mdvid" data-source="youtube" data-id="nbRfNug-RkY" data-placeholder="https://img.youtube.com/vi/nbRfNug-RkY/maxresdefault.jpg">
     </div>
 </div></div>
-<h2 id="beacons">Beacons</h2><p>In this game, players are looking for hidden micro:bit that emit radio signals. 
-The hidden micro:bit are called <strong>beacons</strong>.</p>
+<h2 id="beacons">Beacons</h2><p>In this game, players are looking for hidden :bit that emit radio signals. 
+The hidden :bit are called <strong>beacons</strong>.</p>
 <h2 id="setting-up-the-radio">Setting up the radio</h2><p>We set the radio group to <code>1</code> to make sure all the players are using the same group. 
-We also tell the micro:bit to transmit its serial number (that’s a unique number that identifies it)
+We also tell the :bit to transmit its serial number (that’s a unique number that identifies it)
 so that the player can tell apart each beacon. We also reduce the power of the antenna to reduce the range of transmission.</p>
 <pre><code class="lang-block">radio.setGroup(1)
 radio.setTransmitSerialNumber(true)
@@ -2599,8 +2599,8 @@ we add some <code>|show icon|</code> blocks to animate the screen.</p>
 radio.setGroup(1)
 radio.setTransmitSerialNumber(true)
 radio.setTransmitPower(6)</code></pre>
-<h2 id="hide-the-beacons">Hide the beacons</h2><p>Download the code to your beacon micro:bit and hide them!</p>
-<h2 id="hunters">Hunters</h2><p>The hunter micro:bit look for beacons. </p>
+<h2 id="hide-the-beacons">Hide the beacons</h2><p>Download the code to your beacon :bit and hide them!</p>
+<h2 id="hunters">Hunters</h2><p>The hunter :bit look for beacons. </p>
 <h2 id="is-the-beacon-close-">Is the beacon close?</h2><p>To determine how far or close, we use the signal strength of each radio packet sent by the beacons. The signal
 strength ranges from <code>-128db</code> (weak) to <code>-42db</code> (very strong). </p>
 <pre><code class="lang-blocks">radio.onDataPacketReceived( ({ receivedNumber, signal }) =&gt;  {

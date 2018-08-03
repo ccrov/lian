@@ -2569,13 +2569,13 @@
     <div class="ui text">
         <h1 id="on-gesture">On Gesture</h1><p>Start an <a href="/docs/reference/event-handler.html">event handler</a> (part of the
 program that will run when something happens) This handler works when
-you do a <strong>gesture</strong> (like shaking the micro:bit).</p>
+you do a <strong>gesture</strong> (like shaking the :bit).</p>
 <pre><code class="lang-sig">input.onGesture(Gesture.Shake,() =&gt; {
 })</code></pre>
 <h2 id="parameters">Parameters</h2><ul>
-<li><code>gesture</code> means the way you hold or move the micro:bit. This can be <code>shake</code>, <code>logo up</code>, <code>logo down</code>, <code>screen up</code>, <code>screen down</code>, <code>tilt left</code>, <code>tilt right</code>, <code>free fall</code>, <code>3g</code>, or <code>6g</code>.</li>
+<li><code>gesture</code> means the way you hold or move the :bit. This can be <code>shake</code>, <code>logo up</code>, <code>logo down</code>, <code>screen up</code>, <code>screen down</code>, <code>tilt left</code>, <code>tilt right</code>, <code>free fall</code>, <code>3g</code>, or <code>6g</code>.</li>
 </ul>
-<h2 id="example-random-number">Example: random number</h2><p>This program shows a number from <code>0</code> to <code>9</code> when you shake the micro:bit.</p>
+<h2 id="example-random-number">Example: random number</h2><p>This program shows a number from <code>0</code> to <code>9</code> when you shake the :bit.</p>
 <pre><code class="lang-blocks">input.onGesture(Gesture.Shake,() =&gt; {
     let x = Math.random(10)
     basic.showNumber(x, 100)

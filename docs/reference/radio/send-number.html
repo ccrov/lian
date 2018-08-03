@@ -2567,13 +2567,13 @@
         
             
     <div class="ui text">
-        <h1 id="send-number">Send Number</h1><p>Broadcast a <a href="/docs/types/number.html">number</a> to other micro:bits connected via <code>radio</code>.</p>
+        <h1 id="send-number">Send Number</h1><p>Broadcast a <a href="/docs/types/number.html">number</a> to other :bits connected via <code>radio</code>.</p>
 <pre><code class="lang-sig">radio.sendNumber(0);</code></pre>
 <h2 id="parameters">Parameters</h2><ul>
 <li><code>value</code> - a <a href="/docs/types/number.html">number</a> to send.</li>
 </ul>
-<h2 id="example-broadcasting-acceleration">Example: Broadcasting acceleration</h2><p>This example broadcasts the value of your micro:bit’s <code>acceleration</code>
-in the <code>x</code> direction (left and right) to other micro:bits.  This kind
+<h2 id="example-broadcasting-acceleration">Example: Broadcasting acceleration</h2><p>This example broadcasts the value of your :bit’s <code>acceleration</code>
+in the <code>x</code> direction (left and right) to other :bits.  This kind
 of program might be useful in a model car or model rocket.</p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, () =&gt; {
     radio.sendNumber(input.acceleration(Dimension.X))

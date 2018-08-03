@@ -2570,18 +2570,18 @@
         <h1 id="receive-string">Receive String</h1><blockquote>
 <p>Note: This API has been deprecated! Use <a href="/docs/reference/radio/on-data-packet-received.html">on data packet received</a> instead.</p>
 </blockquote>
-<p>Find the next string sent by <code>radio</code> from another micro:bit.</p>
+<p>Find the next string sent by <code>radio</code> from another :bit.</p>
 <pre><code class="lang-sig">radio.receiveString()</code></pre>
 <h2 id="returns">Returns</h2><ul>
 <li>the first <a href="/docs/types/string.html">string</a> that was sent. If no
 string was sent, then this function returns an empty (blank) string.</li>
 </ul>
-<h2 id="example-simple-receiver">Example: Simple receiver</h2><p>Show the string sent by another micro:bit.</p>
+<h2 id="example-simple-receiver">Example: Simple receiver</h2><p>Show the string sent by another :bit.</p>
 <pre><code class="lang-blocks">radio.onDataReceived(() =&gt; {
     basic.showString(radio.receiveString());
 });</code></pre>
-<h2 id="example-two-way-radio">Example: Two-way radio</h2><p>If you load this program onto two or more micro:bits, you can send a code word from one of them to the others by pressing button <code>A</code>.
-The other micro:bits will receive the code word and then show it.</p>
+<h2 id="example-two-way-radio">Example: Two-way radio</h2><p>If you load this program onto two or more :bits, you can send a code word from one of them to the others by pressing button <code>A</code>.
+The other :bits will receive the code word and then show it.</p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, () =&gt; {
     radio.sendString(&quot;Codeword: TRIMARAN&quot;)
     basic.showString(&quot;SENT&quot;);

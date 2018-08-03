@@ -2572,12 +2572,12 @@
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Engineering: In this project, you will build a remote control based on the seismograph micro:bit activity using a second micro:bit and micro USB cable.</p>
+            <p>Engineering: In this project, you will build a remote control based on the seismograph :bit activity using a second :bit and micro USB cable.</p>
 
         </div>
     </div>
 <h2 id="what-you-ll-need-">What you’ll need:</h2><ul>
-<li>micro:bits (2)</li>
+<li>:bits (2)</li>
 <li>micro USB cables (2)</li>
 <li>Plate</li>
 <li>Tape</li>
@@ -2592,15 +2592,15 @@
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Computer Science: Welcome! The activity will teach you how to code the acceleration of the 1st micro:bit and to visualize the acceleration on the 2nd micro:bit. Let’s get started!</p>
+            <p>Computer Science: Welcome! The activity will teach you how to code the acceleration of the 1st :bit and to visualize the acceleration on the 2nd :bit. Let’s get started!</p>
 
         </div>
     </div>
-<h1 id="computer-science-steps">Computer Science Steps</h1><h2 id="1-">1.</h2><p>We want to simply detach the blocks from the recent activity. We will use blocks from the activity to create a brand new program to show the way micro:bit devices communicate through the BLE (Bluetooth low energy) radio.</p>
+<h1 id="computer-science-steps">Computer Science Steps</h1><h2 id="1-">1.</h2><p>We want to simply detach the blocks from the recent activity. We will use blocks from the activity to create a brand new program to show the way :bit devices communicate through the BLE (Bluetooth low energy) radio.</p>
 <pre><code class="lang-shuffle">basic.forever(() =&gt; {
     led.plotBarGraph(input.acceleration(Dimension.Strength) - 1023, 0);
 });</code></pre>
-<h2 id="2-">2.</h2><p>Let’s measure <code>acceleration (mg)</code> and then <code>send number</code>. <code>Acceleration</code> is measured in <strong>milli-gravities</strong>, so a value of -1000 is equivalent to -1g or -9.81m/s^2. We will be able to get the acceleration value (g-force), in the specified “x” dimension. <code>Send number</code> will broadcast a number data packet to other micro:bits connected via radio.</p>
+<h2 id="2-">2.</h2><p>Let’s measure <code>acceleration (mg)</code> and then <code>send number</code>. <code>Acceleration</code> is measured in <strong>milli-gravities</strong>, so a value of -1000 is equivalent to -1g or -9.81m/s^2. We will be able to get the acceleration value (g-force), in the specified “x” dimension. <code>Send number</code> will broadcast a number data packet to other :bits connected via radio.</p>
 <p>We need add send number block found in the Radio drawer. We will attach send number to acceleration and subtract the gravity from acceleration strength.</p>
 <p>Your finished code will look like this:</p>
 <pre><code class="lang-blocks">radio.sendNumber(input.acceleration(Dimension.Strength) - 1023);</code></pre>
@@ -2616,7 +2616,7 @@
 });
 radio.onDataPacketReceived(() =&gt; {
 });</code></pre>
-<h2 id="5-">5.</h2><p>Finally, we want to chart the acceleration. So we must first implement <code>plot bar graph</code>. <code>Plot Bar Graph</code> will display a vertical bar graph based on the value and high value. In order to transfer the receive the number from the 1st micro:bit, we must implement <code>receive number</code> to constantly display a vertical bar graph based on the value. Remember, the value will equal to the micro:bit’s acceleration in the “x” direction.</p>
+<h2 id="5-">5.</h2><p>Finally, we want to chart the acceleration. So we must first implement <code>plot bar graph</code>. <code>Plot Bar Graph</code> will display a vertical bar graph based on the value and high value. In order to transfer the receive the number from the 1st :bit, we must implement <code>receive number</code> to constantly display a vertical bar graph based on the value. Remember, the value will equal to the :bit’s acceleration in the “x” direction.</p>
 <p>Your finished code will look like this:</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     radio.sendNumber(input.acceleration(Dimension.Strength) - 1023);
@@ -2628,22 +2628,22 @@ radio.onDataPacketReceived(({ receivedNumber }) =&gt; {
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Science: Welcome! The activity will teach you how to chart the acceleration of the 1st micro:bit and to visualize the acceleration on the 2nd micro:bit. Let’s get started!</p>
+            <p>Science: Welcome! The activity will teach you how to chart the acceleration of the 1st :bit and to visualize the acceleration on the 2nd :bit. Let’s get started!</p>
 
         </div>
     </div>
-<h1 id="science-steps">Science Steps</h1><h2 id="6-">6.</h2><p>First, notice that moving the 1st micro:bit in the simulator in any direction, you will change the acceleration value of the 2nd micro:bit. Also, notice that by moving the micro:bit simulator, there is a changing acceleration value of the second micro:bit. Second, the flat colored horizontal line will start a waving line on the 2nd micro:bit to display the value of the strength as measured in milli-gravities. Finally, notice that the LED display will fluctate based on the movement of the 2nd micro:bit simulator.</p>
+<h1 id="science-steps">Science Steps</h1><h2 id="6-">6.</h2><p>First, notice that moving the 1st :bit in the simulator in any direction, you will change the acceleration value of the 2nd :bit. Also, notice that by moving the :bit simulator, there is a changing acceleration value of the second :bit. Second, the flat colored horizontal line will start a waving line on the 2nd :bit to display the value of the strength as measured in milli-gravities. Finally, notice that the LED display will fluctate based on the movement of the 2nd :bit simulator.</p>
 <p><img class="ui image" src="/static/mb/lessons/seis_challenge02.png" alt=""></p>
-<h2 id="7-">7.</h2><p>Connect the 2nd micro:bit to your computer using your USB cable. We should have two micro:bit devices attached to the computer.</p>
+<h2 id="7-">7.</h2><p>Connect the 2nd :bit to your computer using your USB cable. We should have two :bit devices attached to the computer.</p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph33.png" alt=""></p>
-<h2 id="8-">8.</h2><p>Click or tap the <strong>Download</strong> button for the seismograph program to run the program on the 1st micro:bit and 2nd micro:bit.</p>
-<h2 id="9-">9.</h2><p>The black lines should appear directly beneath the colored lines. The black lines measure the micro:bit acceleration. And the colored lines measures micro:bit simulator acceleration.</p>
+<h2 id="8-">8.</h2><p>Click or tap the <strong>Download</strong> button for the seismograph program to run the program on the 1st :bit and 2nd :bit.</p>
+<h2 id="9-">9.</h2><p>The black lines should appear directly beneath the colored lines. The black lines measure the :bit acceleration. And the colored lines measures :bit simulator acceleration.</p>
 <p><img class="ui image" src="/static/mb/lessons/seis_challenge05.png" alt=""></p>
-<p>Run the acceleration experiment by vigarously moving the plate in any direction or move the object below the micro:bit (such as a table).</p>
+<p>Run the acceleration experiment by vigarously moving the plate in any direction or move the object below the :bit (such as a table).</p>
 <p><img class="ui image" src="/static/mb/lessons/seis_challenge06.png" alt=""></p>
-<p>Every time the micro:bit moves in any direction, you generate data points that can be reviewed in Excel later. The more attempts to move the micro:bit, the more data to be reviewed in Excel. Notice that the LED on the 2nd micro:bit changes to communicate the movement of the 1st micro:bit.</p>
+<p>Every time the :bit moves in any direction, you generate data points that can be reviewed in Excel later. The more attempts to move the :bit, the more data to be reviewed in Excel. Notice that the LED on the 2nd :bit changes to communicate the movement of the 1st :bit.</p>
 <p><img class="ui image" src="/static/mb/lessons/seis_challenge04.png" alt=""></p>
-<p>Now we are ready to graph or chart the accceleration of the micro:bit. We want a printout of the micro:bit acceleration graphed in Excel.</p>
+<p>Now we are ready to graph or chart the accceleration of the :bit. We want a printout of the :bit acceleration graphed in Excel.</p>
 <h2 id="10-">10.</h2><p>In order to receive the the data plotted by Excel, click or tap anywhere in the on the chart data.</p>
 <p><img class="ui image" src="/static/mb/lessons/seis_challenge07.png" alt=""></p>
 <h2 id="11-">11.</h2><p>You have two options to Analyze Data:</p>
@@ -2653,10 +2653,10 @@ radio.onDataPacketReceived(({ receivedNumber }) =&gt; {
 </ul>
 <p>Click or tap Download data</p>
 <p><img class="ui image" src="/static/mb/lessons/seismograph9.png" alt=""></p>
-<h2 id="12-">12.</h2><p>A CSV file will be generated to display the data points collected by the micro:bit. Click or tap on the data Excel file that was downloaded to your local Downloads Folder.</p>
+<h2 id="12-">12.</h2><p>A CSV file will be generated to display the data points collected by the :bit. Click or tap on the data Excel file that was downloaded to your local Downloads Folder.</p>
 <p><img class="ui image" src="/static/mb/lessons/analyze9.png" alt=""></p>
 <h2 id="13-">13.</h2><p>Select the data that you want to include in your chart. The chart should include the first two columns: time and acceleration.</p>
-<p>Click or tap on the first two columns (A, B) to include time and acceleration data from the micro:bit. We only need the first two columns (A, B) because the 2nd micro:bit changes have been communicated by the 1st micro:bit. So the data points of the seismograph are being recorded on the 1st micro:bit.</p>
+<p>Click or tap on the first two columns (A, B) to include time and acceleration data from the :bit. We only need the first two columns (A, B) because the 2nd :bit changes have been communicated by the 1st :bit. So the data points of the seismograph are being recorded on the 1st :bit.</p>
 <h2 id="14-">14.</h2><p>Click or tap on Insert then select Recommended Charts. We can select a chart that’s just right for the data.</p>
 <p><img class="ui image" src="/static/mb/analyze3.png" alt=""></p>
 <p>On the Recommended Charts tab, scroll through the list of chart types that Excel recommends for your data.</p>
@@ -2670,8 +2670,8 @@ radio.onDataPacketReceived(({ receivedNumber }) =&gt; {
 <p><img class="ui image" src="/static/mb/lessons/analyze19.png" alt=""></p>
 <ul>
 <li>Have fun reviewing your seismograph data and analyzing the acceleration with Excel.</li>
-<li>The first person and second person take shaking or moving the micor:bit in any direction while the other player charts the data on the micro:bit!</li>
-<li>Review and analyze the actual micro:bit device acceleration data on Excel</li>
+<li>The first person and second person take shaking or moving the micor:bit in any direction while the other player charts the data on the :bit!</li>
+<li>Review and analyze the actual :bit device acceleration data on Excel</li>
 </ul>
 <pre><code class="lang-package">radio</code></pre>
 

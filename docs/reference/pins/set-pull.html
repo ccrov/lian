@@ -2568,22 +2568,22 @@
             
     <div class="ui text">
         <h1 id="set-pull">Set Pull</h1><p>Configure the electrical pull of the specified pin.</p>
-<p>Many micro:bit pins can be configured as <em>pull-ups</em>.  For example, a
+<p>Many :bit pins can be configured as <em>pull-ups</em>.  For example, a
 pull-up can set a pin’s voltage to high (3.3 volts, or <code>1</code> when
 calling <a href="/docs/reference/pins/digital-read-pin.html">digital read pin</a>).  If one
 end of a button is connected to <code>P0</code> (set to high) and the other end
 is connected to <code>GND</code> (0 volts), then when you press the button,
-<code>P0</code> is driven to 0 volts, and the micro:bit software can detect a
+<code>P0</code> is driven to 0 volts, and the :bit software can detect a
 button press.</p>
 <pre><code class="lang-sig">pins.setPull(DigitalPin.P9, PinPullMode.PullDown);</code></pre>
 <p>The pull-up and -down resistors are about 13kOhm.</p>
 <h2 id="parameters">Parameters</h2><ul>
-<li><code>name</code>: The micro:bit hardware pin to configure (<code>P0</code>-<code>P20</code>)</li>
+<li><code>name</code>: The :bit hardware pin to configure (<code>P0</code>-<code>P20</code>)</li>
 <li><code>pull</code>: The pull to which to set the pin (<strong>down</strong>, <strong>up</strong>, or <strong>none</strong>)</li>
 </ul>
 <h2 id="example">Example</h2><p>The following example sets the pull of pin <code>P0</code> to <strong>up</strong> (high).</p>
 <pre><code class="lang-blocks">pins.setPull(DigitalPin.P0, PinPullMode.PullUp);</code></pre>
-<h2 id="see-also">See also</h2><p><a href="https://developer.mbed.org/platforms/Microbit/">micro:bit | mbed</a></p>
+<h2 id="see-also">See also</h2><p><a href="https://developer.mbed.org/platforms/Microbit/">:bit | mbed</a></p>
 
     </div>
 

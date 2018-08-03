@@ -2588,7 +2588,7 @@ with the other pins as it will create short-circuit in the board.</p>
 <p><img class="ui image" src="/static/mb/device/croc-clips/frontclamp.jpg" alt=""></p>
 <h2 id="example-on-pin-pressed-with-random-numbers">Example: on pin pressed with random numbers</h2><p>This example displays a random number every time the crocodile clip holds  <code>GND</code> then connects and disconnects the <code>P0</code> pin. 
 Each time the crocodile clip is firmly connected and disconnected from pin <code>P0</code>, 
-the micro:bit will return a random Number between 0 and the parameter limit.</p>
+the :bit will return a random Number between 0 and the parameter limit.</p>
 <pre><code class="lang-blocks">input.onPinPressed(TouchPin.P0, () =&gt; {
     basic.showNumber(Math.random(10))
 })</code></pre>

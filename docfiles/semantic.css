@@ -42838,8 +42838,8 @@ code.lang-filterblocks {
 }
 #filelist,
 #editortools {
-  background: #fff url(https://az742082.vo.msecnd.net/pub/psopafpj) 0 0 repeat !important;
-}
+ /* background: #fff url(https://az742082.vo.msecnd.net/pub/psopafpj) 0 0 repeat !important;
+*/}
 #downloadArea {
   background: transparent !important;
 }

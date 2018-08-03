@@ -2568,7 +2568,7 @@
             
     <div class="ui text">
         <h1 id="digital-read-pin">Digital Read Pin</h1><p>Read a <strong>digital</strong> (<code>0</code> or <code>1</code>) signal from a <a href="/docs/device/pins.html">pin</a> on
-the micro:bit board.</p>
+the :bit board.</p>
 <pre><code class="lang-sig">pins.digitalReadPin(DigitalPin.P3)</code></pre>
 
     <div class='avatar '>
@@ -2600,9 +2600,9 @@ basic.forever(() =&gt; {
     }
 })</code></pre>
 <p>This program is a remote control for the score keeper program.  If you
-connect <code>P1</code> on the remote control micro:bit to <code>P0</code> on the score
-keeper micro:bit, you can press button <code>B</code> on the remote to buzz and
-make the score bigger on the other micro:bit.</p>
+connect <code>P1</code> on the remote control :bit to <code>P0</code> on the score
+keeper :bit, you can press button <code>B</code> on the remote to buzz and
+make the score bigger on the other :bit.</p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.B, () =&gt; {
     pins.digitalWritePin(DigitalPin.P1, 1);
     basic.pause(500);
@@ -2611,11 +2611,11 @@ make the score bigger on the other micro:bit.</p>
 
     <div class="ui info message">
         <div class="content">
-            <p>Remember to connect <code>GND</code> on both micro:bits together!</p>
+            <p>Remember to connect <code>GND</code> on both :bits together!</p>
 
         </div>
     </div>
-<h2 id="see-also">See also</h2><p><a href="/docs/device/pins.html">micro:bit pins</a>,
+<h2 id="see-also">See also</h2><p><a href="/docs/device/pins.html">:bit pins</a>,
 <a href="/docs/reference/pins/digital-write-pin.html">digital write pin</a>,
 <a href="/docs/reference/pins/analog-read-pin.html">analog read pin</a>,
 <a href="/docs/reference/pins/analog-write-pin.html">analog write pin</a>,

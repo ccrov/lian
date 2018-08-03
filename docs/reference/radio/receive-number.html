@@ -2570,12 +2570,12 @@
         <h1 id="receive-number">Receive Number</h1><blockquote>
 <p>Note: This API has been deprecated! Use <a href="/docs/reference/radio/on-data-packet-received.html">on data packet received</a> instead.</p>
 </blockquote>
-<p>Receives the next number sent by a micro:bit in the same <code>radio</code> group.</p>
+<p>Receives the next number sent by a :bit in the same <code>radio</code> group.</p>
 <pre><code class="lang-sig">radio.receiveNumber();</code></pre>
 <h2 id="returns">Returns</h2><ul>
-<li>the first  <a href="/docs/types/number.html">number</a> that the micro:bit received. If it did not receive any numbers, this function will return <code>0</code>.</li>
+<li>the first  <a href="/docs/types/number.html">number</a> that the :bit received. If it did not receive any numbers, this function will return <code>0</code>.</li>
 </ul>
-<h2 id="example-simple-number-receiver">Example: Simple number receiver</h2><p>This example receives the number broadcasted another micro:bit and shows it
+<h2 id="example-simple-number-receiver">Example: Simple number receiver</h2><p>This example receives the number broadcasted another :bit and shows it
 as a bar graph.</p>
 <pre><code class="lang-blocks">radio.onDataReceived(() =&gt; {
     led.plotBarGraph(radio.receiveNumber(), 1023);

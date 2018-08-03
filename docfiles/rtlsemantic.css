@@ -41391,7 +41391,7 @@ body {
   display: none;
   z-index: 9;
   position: absolute;
-  left: 2rem;
+  left: 2rem; /**/
 }
 #getting-started-btn:not(.sideDocs) {
   display: block;

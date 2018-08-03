@@ -2567,9 +2567,9 @@
         
             
     <div class="ui text">
-        <h1 id="code">Code</h1><p>Let’s build the code that, when the user presses the button <code>A</code> on a micro:bit, will send an impulse over a wire to the receiving micro:bit and turn an LED on there.</p>
-<p>Make sure that the sending and receiving wires run symmetrically across: pin <code>P1</code> on one micro:bit is connected to pin <code>P2</code> on the other, and vice versa, as shown on the pictures in the “Make” section. This way we can use the same code on both micro:bits .</p>
-<h2 id="step-1">Step 1</h2><p>We start with a block that digitally writes <strong>high</strong> (value <code>1</code>) to the sending micro:bit’s pin <code>P1</code>. This block can be found in <em>Pins</em> drawer of the Advanced section.</p>
+        <h1 id="code">Code</h1><p>Let’s build the code that, when the user presses the button <code>A</code> on a :bit, will send an impulse over a wire to the receiving :bit and turn an LED on there.</p>
+<p>Make sure that the sending and receiving wires run symmetrically across: pin <code>P1</code> on one :bit is connected to pin <code>P2</code> on the other, and vice versa, as shown on the pictures in the “Make” section. This way we can use the same code on both :bits .</p>
+<h2 id="step-1">Step 1</h2><p>We start with a block that digitally writes <strong>high</strong> (value <code>1</code>) to the sending :bit’s pin <code>P1</code>. This block can be found in <em>Pins</em> drawer of the Advanced section.</p>
 <pre><code class="lang-blocks">pins.digitalWritePin(DigitalPin.P1, 1)</code></pre>
 <h2 id="step-2">Step 2</h2><p>To show what we are sending, we add a block to turn on an LED in the centre of the LED display (2,2) using <em>plot x, y</em> :</p>
 <pre><code class="lang-blocks">pins.digitalWritePin(DigitalPin.P1, 1)
@@ -2580,7 +2580,7 @@ Pick an <em>if</em> block from the <em>Logic</em> drawer (you’ll need the vers
     pins.digitalWritePin(DigitalPin.P1, 1)
     led.plot(2, 2)
 } else { }</code></pre>
-<h2 id="step-4">Step 4</h2><p>For the <em>else</em> branch (while the button A is not pressed) we want to do the opposite of what we did in the <em>then</em> branch: take the value of pin <code>P1</code> to <strong>low</strong> (0) and unplot the corresponding LED on the sending micro:bit :</p>
+<h2 id="step-4">Step 4</h2><p>For the <em>else</em> branch (while the button A is not pressed) we want to do the opposite of what we did in the <em>then</em> branch: take the value of pin <code>P1</code> to <strong>low</strong> (0) and unplot the corresponding LED on the sending :bit :</p>
 <pre><code class="lang-blocks">if (input.buttonIsPressed(Button.A)) {
     pins.digitalWritePin(DigitalPin.P1, 1)
     led.plot(2, 2)
@@ -2589,7 +2589,7 @@ Pick an <em>if</em> block from the <em>Logic</em> drawer (you’ll need the vers
     led.unplot(2, 2)
 }</code></pre>
 <h2 id="step-5">Step 5</h2><p>Let’s wrap it all in a forever loop so this code runs in the background, forever checking the button <code>A</code> and sending the appropriate signal to the receiver.
-Modify your code so that your code looks like this. Download the code into one of the micro:bits, press and release button <code>A</code> a few times.</p>
+Modify your code so that your code looks like this. Download the code into one of the :bits, press and release button <code>A</code> a few times.</p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     if (input.buttonIsPressed(Button.A)) {
         pins.digitalWritePin(DigitalPin.P1, 1)
@@ -2600,7 +2600,7 @@ Modify your code so that your code looks like this. Download the code into one o
     }
 })</code></pre>
 <p>The sending part is done, so we are going to add the receiving part.</p>
-<h2 id="step-6">Step 6</h2><p>The receiver needs to digitally read from the pin to which the sending micro:bit will be writing (<code>P2</code>) over the wire. Let’s start by going to the <em>Pin</em> drawer, adding digital read pin <code>P0</code> and changing the pin value to <code>P2</code>.
+<h2 id="step-6">Step 6</h2><p>The receiver needs to digitally read from the pin to which the sending :bit will be writing (<code>P2</code>) over the wire. Let’s start by going to the <em>Pin</em> drawer, adding digital read pin <code>P0</code> and changing the pin value to <code>P2</code>.
 Now we want to examine the value read from <code>P2</code> and check whether it is <strong>high</strong> (value <code>1</code>) or not. Go to the <em>Logic</em> drawer, first pick an <em>if</em> block, then come back for a comparison operator (=). Plug in our digital read block as one operand and the value <code>1</code> as the other.
 We shall turn the LED in the bottom right corner (4,4) on to indicate that we received <strong>high</strong> and turn it off otherwise.
 Your code should look as follows:</p>
@@ -2620,9 +2620,9 @@ Your code should look as follows:</p>
 });</code></pre>
 <p>Your telegraph is ready!</p>
 <h2 id="step-7">Step 7</h2><ul>
-<li>Connect the first micro:bit to your computer using your USB cable and download the telegraph script to it.</li>
-<li>Connect the second micro:bit to your computer using your USB cable and download the telegraph script to it.</li>
-<li>The first person and second person can take turns pressing button A on their micro:bits to play the telegraph game!</li>
+<li>Connect the first :bit to your computer using your USB cable and download the telegraph script to it.</li>
+<li>Connect the second :bit to your computer using your USB cable and download the telegraph script to it.</li>
+<li>The first person and second person can take turns pressing button A on their :bits to play the telegraph game!</li>
 </ul>
 
     </div>

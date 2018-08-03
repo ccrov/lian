@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>编程屋体验版 - 编程屋</title>
-    <meta name="Description" content="micro:bit guitar: using light sensor to control tone" />
+    <meta name="Description" content=":bit guitar: using light sensor to control tone" />
 
     
 <!-- include meta.html -->
@@ -19,13 +19,13 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="编程屋体验版 - 编程屋" />
-<meta name="twitter:description" content="micro:bit guitar: using light sensor to control tone" />
+<meta name="twitter:description" content=":bit guitar: using light sensor to control tone" />
 <meta name="twitter:image" content="https://img.youtube.com/vi/2cKg9pokVC4/maxresdefault.jpg" />
 
 <meta property="og:title" content="编程屋体验版 - 编程屋" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="micro:bit guitar: using light sensor to control tone" />
+<meta property="og:description" content=":bit guitar: using light sensor to control tone" />
 <meta property="fb:app_id" content="" />
 <meta property="og:image" content="https://img.youtube.com/vi/2cKg9pokVC4/maxresdefault.jpg" />
 
@@ -2593,8 +2593,8 @@
     <div class="ui embed mdvid" data-source="youtube" data-id="2cKg9pokVC4" data-placeholder="https://img.youtube.com/vi/2cKg9pokVC4/maxresdefault.jpg">
     </div>
 </div></div>
-<h2 id="the-micro-bit-leds-light-sensors">The micro:bit LEDs Light Sensors</h2><ul>
-<li>the micro:bit can detect external light level intensity reaching the LEDs</li>
+<h2 id="the-bit-leds-light-sensors">The :bit LEDs Light Sensors</h2><ul>
+<li>the :bit can detect external light level intensity reaching the LEDs</li>
 <li>the light level block reports a reading of values 0 (<em>dark</em>) to 255 (<em>bright</em>)</li>
 <li>a <strong>Forever Loop</strong> is required to continually measure the current light level and control the tone</li>
 </ul>
@@ -2629,7 +2629,7 @@ music.playTone(Note.C, music.beat(BeatFraction.Quarter))</code></pre>
             <h2 id="frequency">Frequency</h2><p><strong>Frequency</strong> measured in Hz which are cycles per second or vibrations per second</p>
 <ul>
 <li>A healthy human ear can detect frequencies in the range of 20Hz to 20,000Hz.</li>
-<li>The micro:bit + headphones reliably produce detectable output ~50Hz - 6,000Hz.</li>
+<li>The :bit + headphones reliably produce detectable output ~50Hz - 6,000Hz.</li>
 </ul>
 <p><strong>261Hz</strong> represents a C note</p>
 <pre><code class="lang-blocks">music.playTone(261, music.beat(BeatFraction.Half))</code></pre>
@@ -2644,7 +2644,7 @@ by replacing the letter <strong>C</strong> note with a <strong>number</strong> b
 })</code></pre>
 <p>Create a <strong>play tone</strong> block using a <strong>Math</strong> section, <strong>multiplication</strong> block to set <em>tone</em></p>
 <h2 id="next">Next</h2><p><strong>Add</strong> a <strong>B</strong> button block that multiplies the <strong>261</strong> tone by a number other than 2 to set tone</p>
-<p><strong>Download the code to the micro:bit</strong></p>
+<p><strong>Download the code to the :bit</strong></p>
 <p><strong>Test the sound for multiples of the 261Hz <em>C</em> frequency</strong></p>
 <h2 id="step-4-control-the-frequency-with-the-light-input">Step 4: Control the Frequency with the light input</h2><pre><code class="lang-blocks">basic.forever(() =&gt; {
     music.playTone(input.lightLevel() * 25, music.beat(BeatFraction.Quarter))

@@ -2567,28 +2567,28 @@
         
             
     <div class="ui text">
-        <h1 id="activity">Activity</h1><p>Measure the acceleration on the micro:bit in the “x” direction. </p>
+        <h1 id="activity">Activity</h1><p>Measure the acceleration on the :bit in the “x” direction. </p>
 
     <div class='avatar avatar'>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p>Welcome! This activity will teach how to use the micro:bit to chart the acceleration in the “x” direction. Let’s get started!</p>
+            <p>Welcome! This activity will teach how to use the :bit to chart the acceleration in the “x” direction. Let’s get started!</p>
 
         </div>
     </div>
 <p>Let’s measure <code>acceleration (mg)</code> in the “x” direction. Get the acceleration value (milli g-force), in one of three specified dimensions.</p>
 <pre><code class="lang-blocks">input.acceleration(Dimension.X)</code></pre>
-<p>Use the plot bar chart to visualize the acceleration on the LED screen of the micro:bit in the specified range. You implement plot Bar Graph to display a vertical bar graph based on the “value” and “high” value. Then you must insert acceleration in the X dimension to measure the acceleration. </p>
+<p>Use the plot bar chart to visualize the acceleration on the LED screen of the :bit in the specified range. You implement plot Bar Graph to display a vertical bar graph based on the “value” and “high” value. Then you must insert acceleration in the X dimension to measure the acceleration. </p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
     led.plotBarGraph(input.acceleration(Dimension.X), 0)
 })</code></pre>
-<p>Notice that moving the micro:bit in the simulator from left to right (x direction) changes the values beneath the micro:bit in a range from 1023 to -1023 as measured in milli-gravities. By hovering over the micro:bit from left to right, you can observe changing values beneath the micro:bit simulator. Also, the LEDs shown on the Bar Graph fluctates based on the movement of the micro:bit simulator in the x direction. The line underneath the micro:bit simulator reflect the acceleration in the x direction. </p>
-<p>NOTE: The colors of the charts reflect the color of the micro:bit simulator. In this instance, the micro:bit is yellow. So the color of the data line reflects the color of the micro:bit</p>
+<p>Notice that moving the :bit in the simulator from left to right (x direction) changes the values beneath the :bit in a range from 1023 to -1023 as measured in milli-gravities. By hovering over the :bit from left to right, you can observe changing values beneath the :bit simulator. Also, the LEDs shown on the Bar Graph fluctates based on the movement of the :bit simulator in the x direction. The line underneath the :bit simulator reflect the acceleration in the x direction. </p>
+<p>NOTE: The colors of the charts reflect the color of the :bit simulator. In this instance, the :bit is yellow. So the color of the data line reflects the color of the :bit</p>
 <p><img class="ui image" src="/static/mb/data4.png" alt=""></p>
-<p>Vigorously move the micro:bit in the micro:bit simulatator by moving the micro:bit image from side to side. Every time the micro:bit moves in the x direction in the simulator,  you are generating data points that can be reviewed in Excel. The more attempts to move the micro:bit from side to side, the more data being saved in Excel. After you have vigarously moved the micro:bit simulator from side to side for a sufficient amount of time, you are ready to graph or chart the accceleration of the micro:bit. We want a printout of our acceleration on Excel that can be graphed in Excel. </p>
+<p>Vigorously move the :bit in the :bit simulatator by moving the :bit image from side to side. Every time the :bit moves in the x direction in the simulator,  you are generating data points that can be reviewed in Excel. The more attempts to move the :bit from side to side, the more data being saved in Excel. After you have vigarously moved the :bit simulator from side to side for a sufficient amount of time, you are ready to graph or chart the accceleration of the :bit. We want a printout of our acceleration on Excel that can be graphed in Excel. </p>
 <p>We want to chart the data collected by using a tool in Excel. </p>
-<p>The final part of this experiment is opening and reviewing the data in the Excel CSV file. Simply click on the line beneath the simulator. A CSV file will be generated to display the data points collected by moving the micro:bit in the X direction. Then click or tap on the data Excel file that was downloaded to your local <code>Downloads</code> Folder. </p>
-<p>First, click or tap on the first two columns (A, B) to  include the time of the data being collected; b) the results of acceleration data on the micro:bit  </p>
+<p>The final part of this experiment is opening and reviewing the data in the Excel CSV file. Simply click on the line beneath the simulator. A CSV file will be generated to display the data points collected by moving the :bit in the X direction. Then click or tap on the data Excel file that was downloaded to your local <code>Downloads</code> Folder. </p>
+<p>First, click or tap on the first two columns (A, B) to  include the time of the data being collected; b) the results of acceleration data on the :bit  </p>
 <p><img class="ui image" src="/static/mb/data7.png" alt=""></p>
 <p>Use the Recommended Charts command on the Insert tab to quickly create a chart that’s just right for your data.</p>
 <ul>

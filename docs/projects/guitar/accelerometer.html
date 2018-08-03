@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>编程屋体验版 - 编程屋</title>
-    <meta name="Description" content="micro:bit guitar: using accelerometer to control tempo" />
+    <meta name="Description" content=":bit guitar: using accelerometer to control tempo" />
 
     
 <!-- include meta.html -->
@@ -19,13 +19,13 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="编程屋体验版 - 编程屋" />
-<meta name="twitter:description" content="micro:bit guitar: using accelerometer to control tempo" />
+<meta name="twitter:description" content=":bit guitar: using accelerometer to control tempo" />
 <meta name="twitter:image" content="https://img.youtube.com/vi/kA0HpqCWsjs/maxresdefault.jpg" />
 
 <meta property="og:title" content="编程屋体验版 - 编程屋" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="micro:bit guitar: using accelerometer to control tempo" />
+<meta property="og:description" content=":bit guitar: using accelerometer to control tempo" />
 <meta property="fb:app_id" content="" />
 <meta property="og:image" content="https://img.youtube.com/vi/kA0HpqCWsjs/maxresdefault.jpg" />
 
@@ -2599,7 +2599,7 @@
 music.setTempo(120)
 pins.map(0, 0, 1023,60, 320)
 Math.abs(1)</code></pre>
-<h2 id="accelerometer-gravity-and-tilting-">Accelerometer, gravity and tilting!</h2><p>The micro:bit contains an <strong>accelerometer</strong> sensor that is able to measure forces applied to the board.
+<h2 id="accelerometer-gravity-and-tilting-">Accelerometer, gravity and tilting!</h2><p>The :bit contains an <strong>accelerometer</strong> sensor that is able to measure forces applied to the board.
 On earth, we are subject to the <strong>gravity force</strong> which pulls us to the ground!</p>
 
 <div class="ui grid">
@@ -2607,18 +2607,18 @@ On earth, we are subject to the <strong>gravity force</strong> which pulls us to
     <div class="ui embed mdvid" data-source="youtube" data-id="0SULoTKmkhI" data-placeholder="https://img.youtube.com/vi/0SULoTKmkhI/maxresdefault.jpg">
     </div>
 </div></div>
-<p>When the micro:bit is flat on a table, with the screen pointing up, the gravity force is aligned
-with the <strong>Z</strong> axis of the micro:bit. </p>
-<p><img class="ui image" src="/static/mb/projects/guitar/accelleration_axis.png" alt="micro:bit x, y, z axis image">  </p>
+<p>When the :bit is flat on a table, with the screen pointing up, the gravity force is aligned
+with the <strong>Z</strong> axis of the :bit. </p>
+<p><img class="ui image" src="/static/mb/projects/guitar/accelleration_axis.png" alt=":bit x, y, z axis image">  </p>
 <p>If you tilt it up and down, the force will align with the <strong>Y</strong> axis – this is how we can detect tilting!!!
-If the force along <strong>Y</strong> grows, the micro:bit is tilting more and more vertically!</p>
+If the force along <strong>Y</strong> grows, the :bit is tilting more and more vertically!</p>
 <h2 id="measuring-acceleration-along-different-coordinates-x-y-z-axis-">Measuring Acceleration along different coordinates (X, Y, Z axis)</h2><p>The acceleration block approximately measures <strong>milli-g</strong>, which is 1/1000 of a <strong>g</strong> or the 
 acceleration of gravity. </p>
 <h2 id="step-1-graphing-acceleration">Step 1: Graphing acceleration</h2><pre><code class="lang-blocks">basic.forever(() =&gt; {
     led.plotBarGraph(input.acceleration(Dimension.Y), 1023)
 })</code></pre>
 <p><strong>Create the code</strong> that measures the change in the Y axis acceleration as a graph on the LEDs  </p>
-<p><strong>Dowload the code</strong> to the micro:bit </p>
+<p><strong>Dowload the code</strong> to the :bit </p>
 <p><strong>Test the movements that move the graph from 1 to 5 bars on the LEDs</strong> </p>
 <h2 id="extra">Extra</h2><p>Try graphing the acceleration along the <strong>X</strong> and <strong>Z</strong> axis. Can you explain the differences?</p>
 
@@ -2628,7 +2628,7 @@ acceleration of gravity. </p>
 
         </div>
     </div>
-<h2 id="step-2-mapping-acceleration-to-beat">Step 2: Mapping acceleration to Beat</h2><p><strong>micro:bit sensors produce signal values between 0 to 1023. The <em><a href="/docs/reference/pins/map.html">map block</a></em> converts the signal to a desired range.</strong>    </p>
+<h2 id="step-2-mapping-acceleration-to-beat">Step 2: Mapping acceleration to Beat</h2><p><strong>:bit sensors produce signal values between 0 to 1023. The <em><a href="/docs/reference/pins/map.html">map block</a></em> converts the signal to a desired range.</strong>    </p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
         music.setTempo(pins.map(Math.abs(input.acceleration(Dimension.Y)),
             0, 1023,
@@ -2636,7 +2636,7 @@ acceleration of gravity. </p>
          music.playTone(Note.C, music.beat(BeatFraction.Quarter));
 })</code></pre>
 <p><strong>Create the code</strong> that <em>Maps</em>  Y axis acceleration as <em>tempo</em>  </p>
-<p><strong>Download the code</strong> to the micro:bit on the guitar  </p>
+<p><strong>Download the code</strong> to the :bit on the guitar  </p>
 <p><strong>Test the movements that speed and slow the tempo</strong>  </p>
 <h2 id="step-3-combine-with-light-sensor-tone-control">Step 3: Combine with light sensor tone control</h2><p><strong>Put it all together!</strong></p>
 <pre><code class="lang-blocks">basic.forever(() =&gt; {
@@ -2649,7 +2649,7 @@ acceleration of gravity. </p>
         );
 })</code></pre>
 <p><strong>Combine the code above with the light sensor tone control code from the previous activity</strong></p>
-<p><strong>Download the code</strong> to the micro:bit on the guitar    </p>
+<p><strong>Download the code</strong> to the :bit on the guitar    </p>
 <h2 id="now-play-the-guitar-adjusting-tone-and-tempo-using-the-light-sensor-and-accelerometer-">Now play the guitar adjusting tone and tempo using the light sensor and accelerometer!</h2>
    <a class="ui primary button docbutton" href="/docs/projects/guitar/pinpress.html"><p>NEXT: Pin Press on/off</p>
 </a>
